@@ -33,6 +33,7 @@ struct ReunionFlowlet{
 
     uint32_t _PathId;     // current pathId
     uint32_t _nPackets;   // for debugging
+    uint32_t _reroute_cnt; // for analyzing
 
 };
 
@@ -73,23 +74,32 @@ class ReunionRouting : public Object {
     ReunionFlowlet* GetFlowlet(uint64_t Qpkey,CustomHeader ch,uint32_t hopcount);
 
     EventId m_agingEvent;
+
+    // 统计数据
+    uint32_t reroute_count;
     Time m_agingTime;
+
+    EventId m_stat_agingEvent;
+    Time m_stat_agingTime;
     std::map<uint32_t,uint32_t> _PortTransmit;
     uint32_t _HighUtilCount;
     uint32_t _LowUtilCount;
     void AgingEvent();
+    void PortAgingEvent();
 
     EventId m_calculateUtilization;
     void calculateUtilization();
 
     std::set<uint32_t> _HighUtilizedPort;
     std::set<uint32_t> _LowUtilizedPort;
+    std::map<uint32_t,uint32_t>_PortRerouteCnt;
     std::map<uint64_t,ReunionFlowlet*> _QpkeyToFlowlet;
     std::map<uint32_t,std::set<uint32_t>> _ReunionRouteTable;
 
     bool m_isToR;          // is ToR (leaf)
     uint32_t m_switch_id;  // switch's nodeID
     void SetSwitchInfo(bool isToR, uint32_t switch_id);
+    uint32_t GetSwitchId();
     
 };
 

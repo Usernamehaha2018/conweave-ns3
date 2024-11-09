@@ -16,6 +16,9 @@ from datetime import date
 
 # randomID
 random.seed(datetime.now())
+
+# fixid 
+random.seed(100)
 MAX_RAND_RANGE = 1000000000
 
 # config template
@@ -24,6 +27,8 @@ FLOW_FILE {flowfile_path}
 
 FLOW_INPUT_FILE mix/output/{id}/{id}_in.txt
 CNP_OUTPUT_FILE mix/output/{id}/{id}_out_cnp.txt
+LETFLOW_OUTPUT_FILE mix/output/{id}/{id}_out_letflow.txt
+REUNION_OUTPUT_FILE mix/output/{id}/{id}_out_reunion.txt
 FCT_OUTPUT_FILE mix/output/{id}/{id}_out_fct.txt
 PFC_OUTPUT_FILE mix/output/{id}/{id}_out_pfc.txt
 QLEN_MON_FILE mix/output/{id}/{id}_out_qlen.txt
@@ -117,6 +122,7 @@ lb_modes = {
 
 topo2bdp = {
     "leaf_spine_128_100G_OS2": 104000,  # 2-tier -> all 100Gbps
+    "leaf_spine_128_400G_OS2": 102500,  # 2-tier -> all 100Gbps
     "fat_k8_100G_OS2": 156000,  # 3-tier -> all 100Gbps
 }
 
@@ -156,7 +162,7 @@ def main():
     parser.add_argument('--sw_monitoring_interval', dest='sw_monitoring_interval', action='store',
                         type=int, default=10000, help="interval of sampling statistics for queue status (default: 10000ns)")
     parser.add_argument('--letflow_timeout', dest='letflow_timeout', action='store',
-                        type=int, default=250, help="letflow flowlet timeout (default: 250us)")
+                        type=int, default=250000, help="letflow flowlet timeout (default: 250000ns)")
     parser.add_argument('--paralet_on', dest='paralet_on', action='store',
                         type=int, default=0, help="paralet on-off (default: 0)")
     parser.add_argument('--paralet_k', dest='paralet_k', action='store',

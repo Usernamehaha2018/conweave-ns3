@@ -634,6 +634,13 @@ int RdmaHw::ReceiverCheckSeq(uint32_t seq, Ptr<RdmaRxQueuePair> q, uint32_t size
             return 5;
         }
     } else if (seq > expected) {
+        std::cout<<"ooo\n";
+        IntegerValue ooo;
+        GlobalValue::GetValueByName	("ooo_packets", ooo);
+        ooo.Set(ooo.Get()+1);
+        GlobalValue::Bind("ooo_packets",ooo);
+        std:: cout<<Simulator::Now().GetMicroSeconds()<<" "<< ooo.Get()<<"\n";	
+	
         // Generate NACK
         if (m_irn) {
             if (q->m_milestone_rx < seq + size) q->m_milestone_rx = seq + size;

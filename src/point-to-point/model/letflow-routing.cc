@@ -87,6 +87,7 @@ LetflowRouting::LetflowRouting() {
     // set constants
     m_flowletTimeout = Time(MicroSeconds(100));
     m_agingTime = Time(MilliSeconds(10));
+    reroute_count = 0;
 }
 
 // it defines flowlet's 64bit key (order does not matter)
@@ -104,6 +105,10 @@ TypeId LetflowRouting::GetTypeId(void) {
 void LetflowRouting::SetSwitchInfo(bool isToR, uint32_t switch_id) {
     m_isToR = isToR;
     m_switch_id = switch_id;
+}
+
+uint32_t LetflowRouting::GetSwitchId(){
+    return m_switch_id;
 }
 
 /* LetflowRouting's main function */
@@ -167,6 +172,8 @@ uint32_t LetflowRouting::RouteInput(Ptr<Packet> p, CustomHeader ch) {
 
                 /*---- Flowlet Timeout ----*/
                 // NS_LOG_FUNCTION("Flowlet expires, calculate the new port");
+                uint32_t old_port = GetOutPortFromPath(flowlet->_PathId, 0);
+                reroute_count += 1;
                 selectedPath = GetRandomPath(dstToRId);
                 LetflowRouting::nFlowletTimeout++;
 
@@ -178,6 +185,8 @@ uint32_t LetflowRouting::RouteInput(Ptr<Packet> p, CustomHeader ch) {
 
                 // update/add letflowTag
                 uint32_t outPort = GetOutPortFromPath(selectedPath, 0);
+                std::cout << "letflow reroute time: "<< Simulator::Now().GetMicroSeconds() <<  " old port:" << old_port << " new port: "<< outPort << " Switch id: "<< m_switch_id<<"\n";
+                        
                 letflowTag.SetPathId(selectedPath);
                 letflowTag.SetHopCount(0);
 
@@ -189,6 +198,8 @@ uint32_t LetflowRouting::RouteInput(Ptr<Packet> p, CustomHeader ch) {
                 return GetOutPortFromPath(selectedPath, letflowTag.GetHopCount());
             }
             // 2) flowlet does not exist, e.g., first packet of flow
+            reroute_count += 1;
+            // std::cout << Simulator::Now().GetMicroSeconds() << " reroute " << m_switch_id << " " << reroute_count<< std::endl;
             selectedPath = GetRandomPath(dstToRId);
             struct Flowlet* newFlowlet = new Flowlet;
             newFlowlet->_activeTime = now;

@@ -1,0 +1,459 @@
+Waf: Entering directory `/home/mywang/conweave-ns3/build'
+Waf: Leaving directory `/home/mywang/conweave-ns3/build'
+'build' finished successfully (0.476s)
+TOPOLOGY_FILE			config/leaf_spine_128_400G_OS2.txt
+FLOW_FILE			config/random_flow_ring.txt
+FLOW_INPUT_FILE			mix/output/493415276/493415276_in.txt
+CNP_OUTPUT_FILE			mix/output/493415276/493415276_out_cnp.txt
+LETFLOW_OUTPUT_FILE			mix/output/493415276/493415276_out_letflow.txt
+REUNION_OUTPUT_FILE			mix/output/493415276/493415276_out_reunion.txt
+FCT_OUTPUT_FILE		mix/output/493415276/493415276_out_fct.txt
+PFC_OUTPUT_FILE				mix/output/493415276/493415276_out_pfc.txt
+QLEN_MON_FILE				mix/output/493415276/493415276_out_qlen.txt
+VOQ_MON_FILE				mix/output/493415276/493415276_out_voq.txt
+VOQ_MON_DETAIL_FILE				mix/output/493415276/493415276_out_voq_per_dst.txt
+UPLINK_MON_FILE				mix/output/493415276/493415276_out_uplink.txt
+CONN_MON_FILE				mix/output/493415276/493415276_out_conn.txt
+EST_ERROR_MON_FILE			mix/output/493415276/493415276_out_est_error.txt
+QLEN_MON_START				2
+QLEN_MON_END				2
+SW_MONITORING_INTERVAL			10000
+FLOWGEN_START_TIME		2
+FLOWGEN_STOP_TIME		2.2
+BUFFER_SIZE				9
+CC_MODE		1
+LB_MODE			6
+ENABLE_PFC			Yes
+ENABLE_IRN		0
+CONWEAVE_TX_EXPIRY_TIME			+1000000.0ns
+CONWEAVE_REPLY_TIMEOUT_EXTRA			+4000.0ns
+CONWEAVE_PATH_PAUSE_TIME			+16000.0ns
+CONWEAVE_EXTRA_VOQ_FLUSH_TIME			+64000.0ns
+CONWEAVE_DEFAULT_VOQ_WAITING_TIME			+400000.0ns
+ALPHA_RESUME_INTERVAL		1
+RATE_DECREASE_INTERVAL		4
+CLAMP_TARGET_RATE		No
+RP_TIMER			300
+FAST_RECOVERY_TIMES		1
+EWMA_GAIN			0.00390625
+RATE_AI				40.0Mb/s
+RATE_HAI			100.0Mb/s
+MIN_RATE		100Mb/s
+DCTCP_RATE_AI				1000Mb/s
+ERROR_RATE_PER_LINK		0
+L2_CHUNK_SIZE			4000
+L2_ACK_INTERVAL			1
+L2_BACK_TO_ZERO			No
+RATE_BOUND		1
+HAS_WIN		0
+VAR_WIN		0
+FAST_REACT		0
+MI_THRESH		0
+INT_MULTI				1
+GLOBAL_T		1
+U_TARGET		0.95
+MULTI_RATE				0
+SAMPLE_FEEDBACK				0
+ENABLE_QCN			Yes
+USE_DYNAMIC_PFC_THRESHOLD	Yes
+PACKET_PAYLOAD_SIZE		1000
+LINK_DOWN				0 0 0
+KMAX_MAP				 20000000000 400 50000000000 400 100000000000 400 200000000000 400 250000000000 400 400000000000 400
+KMIN_MAP				 20000000000 100 50000000000 100 100000000000 100 200000000000 100 250000000000 100 400000000000 100
+PMAX_MAP				 20000000000 0 50000000000 0 100000000000 0.2 200000000000 0.2 250000000000 0.2 400000000000 0.2
+LOAD			40
+RANDOM_SEED			1
+LETFLOW_TIMEOUT			1700
+PARALET_ON			0
+PARALET_ON			0
+(AVG) NIC RATE: 100000000000
+node_num=138
+maxRtt: 8200, maxBdp: 102500
+Configuring switches
+------------------------------------------
+Running Simulation.
+*** input flow is over the prefixed number -- flow number : 8
+*** flow_input.idx : 8
+*** THIS IS THE LAST FLOW TO SEND :) 
+letflow reroute time: 2000044 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000046 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000046 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000047 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000048 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000048 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000049 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000051 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000051 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000051 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000053 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000053 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000054 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000056 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000056 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000056 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000058 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000058 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000058 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000061 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000061 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000061 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000063 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000063 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000063 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000065 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000065 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000065 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000068 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000068 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000068 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000070 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000070 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000070 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000072 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000073 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000073 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000075 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000075 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000075 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000077 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000078 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000078 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000079 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000080 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000080 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000082 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000082 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000083 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000084 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000085 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000085 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000086 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000087 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000087 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000089 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000090 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000090 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000091 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000092 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000092 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000093 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000095 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000095 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000096 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000097 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000097 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000098 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000099 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000100 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000101 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000102 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000102 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000103 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000104 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000105 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000105 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000107 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000107 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000108 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000109 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000109 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000110 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000112 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000112 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000112 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000114 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000114 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000115 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000116 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000117 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000117 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000119 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000119 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000119 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000121 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000122 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000122 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000124 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000124 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000124 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000126 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000126 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000126 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000129 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000129 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000129 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000131 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000131 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000131 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000133 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000134 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000134 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000136 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000136 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000136 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000138 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000138 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000139 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000140 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000141 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000141 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000143 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000143 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000144 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000145 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000146 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000146 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000147 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000148 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000148 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000150 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000151 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000151 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000152 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000153 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000153 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000154 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000155 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000156 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000157 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000158 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000158 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000159 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000160 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000161 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000161 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000163 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000163 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000164 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000165 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000166 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000166 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000168 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000168 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000168 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000170 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000170 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000171 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000172 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000173 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000173 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000175 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000175 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000176 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000177 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000178 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000178 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000180 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000180 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000180 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000182 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000183 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000183 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000185 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000185 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000185 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000187 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000187 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000188 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000189 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000190 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000190 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000192 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000192 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000192 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000194 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000194 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000195 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000197 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000197 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000197 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000199 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000199 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000200 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000201 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000202 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000202 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000204 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000204 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000205 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000206 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000207 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000207 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000208 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000209 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000209 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000211 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000211 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000212 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000213 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000214 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000214 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000215 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000216 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000217 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000218 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000219 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000219 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000220 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000221 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000222 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000222 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000224 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000224 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000225 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000226 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000227 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000227 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000228 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000229 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000229 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000231 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000231 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000232 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000233 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000234 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000234 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000236 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000236 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000236 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000238 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000239 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000239 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000241 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000241 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000241 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000243 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000244 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000244 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000245 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000246 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000246 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000248 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000248 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000249 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000250 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000251 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000251 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000253 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000253 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000253 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000255 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000255 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000256 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000258 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000258 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000258 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000260 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000260 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000261 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000262 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000262 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000263 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000265 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000265 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000266 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000267 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000267 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000268 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000269 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000270 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000271 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000272 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000272 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000273 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000274 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000275 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000275 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000276 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000277 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000278 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000279 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000279 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000280 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000281 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000282 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000283 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000283 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000284 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000285 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000286 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000287 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000288 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000288 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000289 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000290 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000290 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000292 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000292 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000293 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000294 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000295 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000295 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000297 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000297 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000297 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000299 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000300 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000300 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000301 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000302 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000302 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000304 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000304 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000305 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000306 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000307 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000307 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000309 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000309 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000310 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000311 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000311 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000312 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000314 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000314 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000314 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000316 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000316 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000317 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000318 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000319 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000319 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000321 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000321 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000322 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000323 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000323 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000324 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000326 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000326 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000327 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000328 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000328 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000329 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000330 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000331 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000332 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000333 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000333 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000334 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000335 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000335 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000336 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000337 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000338 old port:17 new port: 18 Switch id: 128
+letflow reroute time: 2000339 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000340 old port:18 new port: 17 Switch id: 128
+letflow reroute time: 2000340 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000341 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000342 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000343 old port:18 new port: 18 Switch id: 128
+letflow reroute time: 2000344 old port:17 new port: 17 Switch id: 128
+letflow reroute time: 2000345 old port:18 new port: 18 Switch id: 128
+
+*** Simulator is enforced to be finished, finished so far: 8/ total: 8, Time:+2230100000.0ns
+
+------------Letflow History---------------
+Number of flowlet's timeout:375
+Letflow's timeout: +1700.0ns
+457.555

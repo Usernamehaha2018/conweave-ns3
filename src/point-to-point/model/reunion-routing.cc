@@ -59,11 +59,18 @@ void ReunionTag::Print(std::ostream& os) const {
 
     ReunionRouting::ReunionRouting(){
         _FlowletTimeout=Time(MicroSeconds(250));
-        _SubFlowletGap=Time(MicroSeconds(50));
         m_agingTime=Time(MicroSeconds(50));
+        m_stat_agingTime = Time(MicroSeconds(1000));
+        reroute_count = 0;
 
-        _HighUtilCount=12.5*1000*50*0.9;
-        _LowUtilCount=12.5*1000*50*0.7;
+        // 8 timegap stat
+        _HighUtilCount=4* 12.5*1000*1000*0.99;
+        _LowUtilCount=4* 12.5*1000*1000*0.8;
+
+        // init reroute map
+        for(uint32_t i = 0;i <128;i++){
+            _PortRerouteCnt.insert(std::make_pair(i, 0));
+        }
     };
 
     uint64_t ReunionRouting::GetQpKey(uint32_t dip, uint16_t sport, uint16_t dport, uint16_t pg){
@@ -75,7 +82,10 @@ void ReunionTag::Print(std::ostream& os) const {
     m_isToR = isToR;
     m_switch_id = switch_id;
     }
-    
+
+    uint32_t ReunionRouting::GetSwitchId(){
+        return m_switch_id;
+    }
     uint32_t ReunionRouting::GetOutPortFromPath(const uint32_t& path, const uint32_t& hopCount){
         uint32_t port=((uint8_t*)&path)[hopCount];
         if(_PortTransmit.find(port)==_PortTransmit.end())
@@ -91,6 +101,9 @@ void ReunionTag::Print(std::ostream& os) const {
         //trun on event
         if(!m_agingEvent.IsRunning()){
             m_agingEvent = Simulator::Schedule(m_agingTime, &ReunionRouting::AgingEvent, this);
+        }
+        if(!m_stat_agingEvent.IsRunning()){
+            m_stat_agingEvent = Simulator::Schedule(m_stat_agingTime, &ReunionRouting::PortAgingEvent, this);
         }
 
     assert(Settings::hostIp2SwitchId.find(ch.sip) != Settings::hostIp2SwitchId.end());  // Misconfig of Settings::hostIp2SwitchId - sip"
@@ -150,35 +163,45 @@ void ReunionTag::Print(std::ostream& os) const {
         if(_QpkeyToFlowlet.find(Qpkey)!=_QpkeyToFlowlet.end()){
             ReunionFlowlet* flowlet=_QpkeyToFlowlet.find(Qpkey)->second;
             if(now-flowlet->_activeTime>_FlowletTimeout){
+                reroute_count += 1;
                 flowlet->_lastReroute=now;
                 flowlet->_PathId=GetRandomPath(dstToRId);
             }
 
             flowlet->_activeTime=now;
-            if(now-flowlet->_lastReroute>_SubFlowletGap&&_HighUtilizedPort.find(GetOutPortFromPath(flowlet->_PathId,hopcount))!=_HighUtilizedPort.end()){
+            if(flowlet->_reroute_cnt<1 && now-flowlet->_lastReroute>m_stat_agingTime&&_HighUtilizedPort.find(GetOutPortFromPath(flowlet->_PathId,hopcount))!=_HighUtilizedPort.end()){
                 auto pathItr = _ReunionRouteTable.find(dstToRId);
                 assert(pathItr != _ReunionRouteTable.end());  // Cannot find dstToRId from ToLeafTable
                 auto innerPathItr = pathItr->second.begin();
                 while(innerPathItr!=pathItr->second.end()){
-                    if(*innerPathItr!=flowlet->_PathId&&_LowUtilizedPort.find(GetOutPortFromPath(*innerPathItr,hopcount))!=_LowUtilizedPort.end()){
+                    if(*innerPathItr!=flowlet->_PathId&&_LowUtilizedPort.find(GetOutPortFromPath(*innerPathItr,hopcount))!=_LowUtilizedPort.end()&&_PortRerouteCnt[GetOutPortFromPath(*innerPathItr,hopcount)]==0 && _PortRerouteCnt[GetOutPortFromPath(flowlet->_PathId,hopcount)] == 0){
+                        // 羊群效应
+                        _PortRerouteCnt[GetOutPortFromPath(*innerPathItr,hopcount)] += 1;
+                        _PortRerouteCnt[GetOutPortFromPath(flowlet->_PathId,hopcount)] += 1;
+                        std::cout << "Reunion reroute time: "<< Simulator::Now().GetMicroSeconds() <<  " old port:" << GetOutPortFromPath(flowlet->_PathId,hopcount) << " new port: "<< GetOutPortFromPath(*innerPathItr,hopcount) << " Switch id: "<< m_switch_id<< " reoute time: "<< flowlet->_reroute_cnt<<"\n";
                         flowlet->_PathId=*innerPathItr;
-                        _LowUtilizedPort.erase(_LowUtilizedPort.find(GetOutPortFromPath(*innerPathItr,hopcount)));
+                        flowlet->_lastReroute=now;
+                        flowlet->_reroute_cnt += 1;
+                        reroute_count += 1;
+                        
                         NS_LOG_DEBUG("Reroute flowlet from high util to low at switch "<<m_switch_id);
                         break;
                     }
                     innerPathItr++;
                 }
-                flowlet->_lastReroute=now;
+                
             }
             return flowlet;
         }
         else{
+            reroute_count += 1;
             ReunionFlowlet* flowlet=new ReunionFlowlet;
             _QpkeyToFlowlet[Qpkey]=flowlet;
             flowlet->_activatedTime=now;
             flowlet->_activeTime=now;
             flowlet->_lastReroute=now;
             flowlet->_PathId=GetRandomPath(dstToRId);
+            flowlet->_reroute_cnt = 0;
             
             return flowlet;
         }
@@ -210,8 +233,26 @@ void ReunionRouting::AgingEvent(){
         else itr++;
     }
 
+    // _HighUtilizedPort.clear();
+    // _LowUtilizedPort.clear();
+
+    // for(auto portItr=_PortTransmit.begin();portItr!=_PortTransmit.end();portItr++){
+    //     //NS_LOG_DEBUG("port util couting: "<<portItr->second);
+    //     if(portItr->second>_HighUtilCount)_HighUtilizedPort.insert(portItr->first);
+    //     if(portItr->second<_LowUtilCount)_LowUtilizedPort.insert(portItr->first);
+    //     portItr->second=0;
+    // }
+
+    // m_agingEvent = Simulator::Schedule(m_agingTime, &ReunionRouting::AgingEvent, this);
+}
+
+void ReunionRouting::PortAgingEvent(){
+    //NS_LOG_DEBUG("Aging event at "<<m_switch_id<<" High: "<<_HighUtilCount<<" Low: "<<_LowUtilCount);
+    Time now=Simulator::Now();
+
     _HighUtilizedPort.clear();
     _LowUtilizedPort.clear();
+    std::cout << "Switch id: "<< m_switch_id << " Time: "<<Simulator::Now().GetMicroSeconds()<<"\n";
 
     for(auto portItr=_PortTransmit.begin();portItr!=_PortTransmit.end();portItr++){
         //NS_LOG_DEBUG("port util couting: "<<portItr->second);
@@ -219,7 +260,26 @@ void ReunionRouting::AgingEvent(){
         if(portItr->second<_LowUtilCount)_LowUtilizedPort.insert(portItr->first);
         portItr->second=0;
     }
+    std::cout << "High: ";
+    for (auto it = std::begin(_HighUtilizedPort); it != std::end(_HighUtilizedPort); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout << "\nLow:";
+    for (auto it = std::begin(_LowUtilizedPort); it != std::end(_LowUtilizedPort); ++it) {
+        std::cout << *it << " ";
+    }
+    std::cout <<"\n";
+    for(auto portItr=_PortRerouteCnt.begin();portItr!=_PortRerouteCnt.end();portItr++){
+        //NS_LOG_DEBUG("port util couting: "<<portItr->second);
+        portItr->second=0;
+    }
+    if( m_switch_id == 128){
+        for (const auto& elem : _QpkeyToFlowlet) {
+            std::cout << "Key: " << elem.first << ", Value: " << GetOutPortFromPath(elem.second->_PathId,0) << std::endl;
+        }
+    }
 
-    m_agingEvent = Simulator::Schedule(m_agingTime, &ReunionRouting::AgingEvent, this);
+    m_stat_agingEvent = Simulator::Schedule(m_stat_agingTime, &ReunionRouting::PortAgingEvent, this);
 }
+
 }

@@ -93,9 +93,14 @@ class LetflowRouting : public Object {
     /* SET functions */
     void SetConstants(Time agingTime, Time flowletTimeout);
     void SetSwitchInfo(bool isToR, uint32_t switch_id);
+    uint32_t GetSwitchId();
 
     // periodic events for flowlet timeout
     EventId m_agingEvent;
+
+    // 统计数据
+    uint32_t reroute_count;
+
     void AgingEvent();
 
     // topological info (should be initialized in the beginning)

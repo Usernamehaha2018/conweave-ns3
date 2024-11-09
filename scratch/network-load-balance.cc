@@ -47,6 +47,8 @@
 #include "ns3/qbb-net-device.h"
 #include "ns3/rdma-hw.h"
 #include "ns3/settings.h"
+#include "ns3/global-value.h"
+#include "ns3/integer.h"
 
 using namespace ns3;
 using namespace std;
@@ -104,6 +106,8 @@ FILE *pfc_file = NULL;
 FILE *fct_output = NULL;
 FILE *flow_input_stream = NULL;
 FILE *cnp_output = NULL;
+FILE *letflow_output = NULL;
+FILE *reunion_output = NULL;
 FILE *est_error_output = NULL;
 FILE *voq_output = NULL;
 FILE *voq_detail_output = NULL;
@@ -115,6 +119,8 @@ std::string flow_input_file = "flow.txt";
 std::string fct_output_file = "fct.txt";
 std::string pfc_output_file = "pfc.txt";
 std::string cnp_output_file = "cnp.txt";
+std::string letflow_output_file = "letflow_reroute.txt";
+std::string reunion_output_file = "reunion_reroute.txt";
 std::string qlen_mon_file = "qlen.txt";
 std::string voq_mon_file = "voq.txt";
 std::string voq_mon_detail_file = "voq_detail.txt";
@@ -338,6 +344,32 @@ void cnp_freq_monitoring(FILE *fout, Ptr<RdmaHw> rdmahw) {
 
     // recursive callback
     Simulator::Schedule(NanoSeconds(cnp_monitor_bucket), &cnp_freq_monitoring, fout, rdmahw);
+}
+
+/**
+ * @brief Letflow reroute frequency monitoring
+ */
+void letflow_reroute_monitoring(FILE *fout, Ptr<SwitchMmu> mmu) {
+    if(mmu->m_letflowRouting.reroute_count){
+        fprintf(fout, "%lu %u %u\n", Simulator::Now().GetMicroSeconds(),
+        mmu->m_letflowRouting.GetSwitchId(), mmu->m_letflowRouting.reroute_count);
+        fflush(fout);
+    }
+    // recursive callback
+    Simulator::Schedule(MicroSeconds(5), &letflow_reroute_monitoring, fout, mmu);
+}
+
+/**
+ * @brief Reunion reroute frequency monitoring
+ */
+void reunion_reroute_monitoring(FILE *fout, Ptr<SwitchMmu> mmu) {
+    if(mmu->m_ReunionRouting.reroute_count){
+        fprintf(fout, "%lu %u %u\n", Simulator::Now().GetMicroSeconds(),
+        mmu->m_ReunionRouting.GetSwitchId(), mmu->m_ReunionRouting.reroute_count);
+        fflush(fout);
+    }
+    // recursive callback
+    Simulator::Schedule(MicroSeconds(5), &reunion_reroute_monitoring, fout, mmu);
 }
 
 /**
@@ -826,6 +858,16 @@ int main(int argc, char *argv[]) {
                 conf >> v;
                 cnp_output_file = v;
                 std::cerr << "CNP_OUTPUT_FILE\t\t\t" << cnp_output_file << "\n";
+            } else if (key.compare("LETFLOW_OUTPUT_FILE") == 0) {
+                std::string v;
+                conf >> v;
+                letflow_output_file = v;
+                std::cerr << "LETFLOW_OUTPUT_FILE\t\t\t" << letflow_output_file << "\n";
+            } else if (key.compare("REUNION_OUTPUT_FILE") == 0) {
+                std::string v;
+                conf >> v;
+                reunion_output_file = v;
+                std::cerr << "REUNION_OUTPUT_FILE\t\t\t" << reunion_output_file << "\n";
             } else if (key.compare("EST_ERROR_MON_FILE") == 0) {
                 std::string v;
                 conf >> v;
@@ -839,7 +881,7 @@ int main(int argc, char *argv[]) {
             }else if(key.compare("LETFLOW_TIMEOUT") == 0){
                 uint32_t v;
                 conf >> v;
-                letflow_flowletTimeout = MicroSeconds(v);
+                letflow_flowletTimeout = NanoSeconds(v);
                 std::cerr << "LETFLOW_TIMEOUT\t\t\t" << v << "\n";
             } 
             else if (key.compare("SW_MONITORING_INTERVAL") == 0) {
@@ -1425,6 +1467,8 @@ int main(int argc, char *argv[]) {
     flow_input_stream = fopen(flow_input_file.c_str(), "w");
     if (cc_mode == 1) {
         cnp_output = fopen(cnp_output_file.c_str(), "w");
+        letflow_output = fopen(letflow_output_file.c_str(), "w");
+        reunion_output = fopen(reunion_output_file.c_str(), "w");
     }
 
     /**
@@ -1458,6 +1502,7 @@ int main(int argc, char *argv[]) {
     // manually type BDP
     std::map<std::string, uint32_t> topo2bdpMap;
     topo2bdpMap[std::string("leaf_spine_128_100G_OS2")] = 104000;  // RTT=8320
+    topo2bdpMap[std::string("leaf_spine_128_400G_OS2")] = 102500;  // RTT=8320
     topo2bdpMap[std::string("fat_k8_100G_OS2")] = 156000;      // RTT=12480 --> all 100G links
 
     // topology_file
@@ -1477,6 +1522,11 @@ int main(int argc, char *argv[]) {
         assert(false);
     }
 
+    // for analyze
+    static ns3::GlobalValue ooo_packets ("ooo_packets", 
+                                  "Total ooo packet number",
+                                  ns3::IntegerValue (0),
+                                  ns3::MakeIntegerChecker<uint32_t> ());
     // rdmaHw config
     for (uint32_t i = 0; i < node_num; i++) {
         if (n.Get(i)->GetNodeType() == 0) {  // is server
@@ -1798,6 +1848,7 @@ int main(int argc, char *argv[]) {
                     sw->m_mmu->m_letflowRouting.SetConstants(letflow_agingTime,
                                                              letflow_flowletTimeout);
                     sw->m_mmu->m_letflowRouting.SetSwitchInfo(sw->m_isToR, sw->GetId());
+                    Simulator::Schedule(NanoSeconds(100), &letflow_reroute_monitoring, letflow_output, sw->m_mmu);
                 }
                 if (lb_mode == 9) {
                     sw->m_mmu->m_conweaveRouting.SetConstants(
@@ -1808,6 +1859,7 @@ int main(int argc, char *argv[]) {
                 }
                 if(lb_mode==11) {
                     sw->m_mmu->m_ReunionRouting.SetSwitchInfo(sw->m_isToR,sw->GetId());
+                    Simulator::Schedule(NanoSeconds(100), &reunion_reroute_monitoring, reunion_output, sw->m_mmu);
                 }
             }
         }

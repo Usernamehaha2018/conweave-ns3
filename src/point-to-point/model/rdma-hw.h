@@ -11,6 +11,8 @@
 
 #include "qbb-net-device.h"
 #include "rdma-queue-pair.h"
+#include "ns3/global-value.h"
+#include "ns3/integer.h"
 
 namespace ns3 {
 

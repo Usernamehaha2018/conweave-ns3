@@ -25,6 +25,7 @@ lb_modes = {
     3: "conga",
     6: "letflow",
     9: "conweave",
+    11: "reunion"
 }
 topo2bdp = {
     "leaf_spine_128_100G_OS2": 104000,  # 2-tier
@@ -55,6 +56,7 @@ M = [
     's',
     'x',
     'v',
+    'D',
     'D'
 ]
 
@@ -64,6 +66,7 @@ H = [
     '***',
     'x',
     'xxx',
+    "xx"
 ]
 
 def setup():
@@ -125,6 +128,7 @@ def get_steps_from_raw(filename, time_start, time_end, step=5):
     # time_start = int(2.005 * 1000000000)
     # time_end = int(3.0 * 1000000000) 
     cmd_slowdown = "cat %s"%(filename)+" | awk '{ if ($6>"+"%d"%time_start+" && $6+$7<"+"%d"%(time_end)+") { slow=$7/$8; print slow<1?1:slow, $5} }' | sort -n -k 2"    
+    print(filename)
     output_slowdown = subprocess.check_output(cmd_slowdown, shell=True)
     aa = output_slowdown.decode("utf-8").split('\n')[:-2]
     nn = len(aa)
@@ -132,6 +136,7 @@ def get_steps_from_raw(filename, time_start, time_end, step=5):
     # CDF of FCT
     res = [[i/100.] for i in range(0, 100, step)]
     for i in range(0,100,step):
+        print(i)
         l = int(i * nn / 100)
         r = int((i+step) * nn / 100)
         fct_size = aa[l:r]
@@ -164,7 +169,7 @@ def get_steps_from_raw(filename, time_start, time_end, step=5):
 
 def main():
     parser = argparse.ArgumentParser(description='Plotting FCT of results')
-    parser.add_argument('-sT', dest='time_limit_begin', action='store', type=int, default=2005000000, help="only consider flows that finish after T, default=2005000000 ns")
+    parser.add_argument('-sT', dest='time_limit_begin', action='store', type=int, default=2000000000-1, help="only consider flows that finish after T, default=2005000000 ns")
     parser.add_argument('-fT', dest='time_limit_end', action='store', type=int, default=10000000000, help="only consider flows that finish before T, default=10000000000 ns")
     
     args = parser.parse_args()
@@ -187,6 +192,7 @@ def main():
                 if topo in line:
                     parsed_line = line.replace("\n", "").split(',')
                     config_id = parsed_line[1]
+                    print(parsed_line)
                     cc_mode = cc_modes[int(parsed_line[2])]
                     lb_mode = lb_modes[int(parsed_line[3])]
                     encoded_fc = (int(parsed_line[9]), int(parsed_line[10]))
@@ -221,7 +227,7 @@ def main():
         
         xvals = [i for i in range(STEP, 100 + STEP, STEP)]
 
-        lbmode_order = ["fecmp", "conga", "letflow", "conweave"]
+        lbmode_order = ["fecmp", "conga", "letflow", "conweave","reunion"]
         for tgt_lbmode in lbmode_order:
             for vv in v:
                 config_id = vv[0]
@@ -274,7 +280,7 @@ def main():
         
         xvals = [i for i in range(STEP, 100 + STEP, STEP)]
 
-        lbmode_order = ["fecmp", "conga", "letflow", "conweave"]
+        lbmode_order = ["fecmp", "conga", "letflow", "conweave","reunion"]
         for tgt_lbmode in lbmode_order:
             for vv in v:
                 config_id = vv[0]

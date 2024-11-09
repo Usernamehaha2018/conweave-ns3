@@ -1,0 +1,7570 @@
+Waf: Entering directory `/home/mywang/conweave-ns3/build'
+Waf: Leaving directory `/home/mywang/conweave-ns3/build'
+'build' finished successfully (0.480s)
+TOPOLOGY_FILE			config/leaf_spine_128_100G_OS2.txt
+FLOW_FILE			config/random_flow_ring.txt
+FLOW_INPUT_FILE			mix/output/488474150/488474150_in.txt
+CNP_OUTPUT_FILE			mix/output/488474150/488474150_out_cnp.txt
+LETFLOW_OUTPUT_FILE			mix/output/488474150/488474150_out_letflow.txt
+REUNION_OUTPUT_FILE			mix/output/488474150/488474150_out_reunion.txt
+FCT_OUTPUT_FILE		mix/output/488474150/488474150_out_fct.txt
+PFC_OUTPUT_FILE				mix/output/488474150/488474150_out_pfc.txt
+QLEN_MON_FILE				mix/output/488474150/488474150_out_qlen.txt
+VOQ_MON_FILE				mix/output/488474150/488474150_out_voq.txt
+VOQ_MON_DETAIL_FILE				mix/output/488474150/488474150_out_voq_per_dst.txt
+UPLINK_MON_FILE				mix/output/488474150/488474150_out_uplink.txt
+CONN_MON_FILE				mix/output/488474150/488474150_out_conn.txt
+EST_ERROR_MON_FILE			mix/output/488474150/488474150_out_est_error.txt
+QLEN_MON_START				2
+QLEN_MON_END				2
+SW_MONITORING_INTERVAL			10000
+FLOWGEN_START_TIME		2
+FLOWGEN_STOP_TIME		2.2
+BUFFER_SIZE				9
+CC_MODE		1
+LB_MODE			11
+ENABLE_PFC			Yes
+ENABLE_IRN		0
+CONWEAVE_TX_EXPIRY_TIME			+1000000.0ns
+CONWEAVE_REPLY_TIMEOUT_EXTRA			+4000.0ns
+CONWEAVE_PATH_PAUSE_TIME			+16000.0ns
+CONWEAVE_EXTRA_VOQ_FLUSH_TIME			+64000.0ns
+CONWEAVE_DEFAULT_VOQ_WAITING_TIME			+400000.0ns
+ALPHA_RESUME_INTERVAL		1
+RATE_DECREASE_INTERVAL		4
+CLAMP_TARGET_RATE		No
+RP_TIMER			300
+FAST_RECOVERY_TIMES		1
+EWMA_GAIN			0.00390625
+RATE_AI				40.0Mb/s
+RATE_HAI			100.0Mb/s
+MIN_RATE		100Mb/s
+DCTCP_RATE_AI				1000Mb/s
+ERROR_RATE_PER_LINK		0
+L2_CHUNK_SIZE			4000
+L2_ACK_INTERVAL			1
+L2_BACK_TO_ZERO			No
+RATE_BOUND		1
+HAS_WIN		0
+VAR_WIN		0
+FAST_REACT		0
+MI_THRESH		0
+INT_MULTI				1
+GLOBAL_T		1
+U_TARGET		0.95
+MULTI_RATE				0
+SAMPLE_FEEDBACK				0
+ENABLE_QCN			Yes
+USE_DYNAMIC_PFC_THRESHOLD	Yes
+PACKET_PAYLOAD_SIZE		1000
+LINK_DOWN				0 0 0
+KMAX_MAP				 20000000000 400 50000000000 400 100000000000 400 200000000000 400 250000000000 400 400000000000 400
+KMIN_MAP				 20000000000 100 50000000000 100 100000000000 100 200000000000 100 250000000000 100 400000000000 100
+PMAX_MAP				 20000000000 0 50000000000 0 100000000000 0.2 200000000000 0.2 250000000000 0.2 400000000000 0.2
+LOAD			40
+RANDOM_SEED			1
+LETFLOW_TIMEOUT			10000
+PARALET_ON			0
+PARALET_ON			0
+(AVG) NIC RATE: 100000000000
+node_num=144
+maxRtt: 8320, maxBdp: 104000
+Configuring switches
+------------------------------------------
+Running Simulation.
+*** input flow is over the prefixed number -- flow number : 7
+*** flow_input.idx : 7
+*** THIS IS THE LAST FLOW TO SEND :) 
+Switch id: 128 Time: 2001001
+High: 19 20 23 
+Low:530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 23
+Key: 792662126669856871, Value: 18
+Key: 792663226181484647, Value: 20
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 24
+Key: 792666524716367975, Value: 19
+Switch id: 143 Time: 2001002
+High: 
+Low:
+Switch id: 142 Time: 2001002
+High: 2 
+Low:
+Switch id: 137 Time: 2001002
+High: 
+Low:
+Switch id: 139 Time: 2001002
+High: 2 
+Low:
+Switch id: 138 Time: 2001002
+High: 2 
+Low:
+Switch id: 129 Time: 2001003
+High: 
+Low:
+Switch id: 128 Time: 2002001
+High: 19 20 23 
+Low:17 21 22 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 23
+Key: 792662126669856871, Value: 18
+Key: 792663226181484647, Value: 20
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 24
+Key: 792666524716367975, Value: 19
+Reunion reroute time: 2002001 old port:23 new port: 17 Switch id: 128 reoute time: 0
+Reunion reroute time: 2002001 old port:20 new port: 21 Switch id: 128 reoute time: 0
+Reunion reroute time: 2002001 old port:19 new port: 22 Switch id: 128 reoute time: 0
+Switch id: 143 Time: 2002002
+High: 
+Low:
+Switch id: 142 Time: 2002002
+High: 2 
+Low:
+Switch id: 137 Time: 2002002
+High: 
+Low:
+Switch id: 139 Time: 2002002
+High: 2 
+Low:
+Switch id: 138 Time: 2002002
+High: 2 
+Low:
+Switch id: 129 Time: 2002003
+High: 
+Low:
+Switch id: 128 Time: 2003001
+High: 17 21 22 
+Low:19 20 23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 18
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 24
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2003002
+High: 
+Low:
+Switch id: 142 Time: 2003002
+High: 
+Low:2 
+Switch id: 137 Time: 2003002
+High: 
+Low:
+Switch id: 139 Time: 2003002
+High: 
+Low:2 
+Switch id: 138 Time: 2003002
+High: 
+Low:2 
+Switch id: 136 Time: 2003002
+High: 2 
+Low:
+Switch id: 140 Time: 2003002
+High: 2 
+Low:
+Switch id: 141 Time: 2003002
+High: 2 
+Low:
+Switch id: 129 Time: 2003003
+High: 
+Low:
+Switch id: 128 Time: 2004001
+High: 17 18 21 22 24 
+Low:19 20 23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 18
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 24
+Key: 792666524716367975, Value: 22
+Reunion reroute time: 2004001 old port:24 new port: 19 Switch id: 128 reoute time: 0
+Reunion reroute time: 2004001 old port:18 new port: 20 Switch id: 128 reoute time: 0
+Switch id: 143 Time: 2004002
+High: 2 
+Low:
+Switch id: 142 Time: 2004002
+High: 
+Low:2 
+Switch id: 137 Time: 2004002
+High: 2 
+Low:
+Switch id: 139 Time: 2004002
+High: 
+Low:2 
+Switch id: 138 Time: 2004002
+High: 
+Low:2 
+Switch id: 136 Time: 2004002
+High: 2 
+Low:
+Switch id: 140 Time: 2004002
+High: 2 
+Low:
+Switch id: 141 Time: 2004002
+High: 2 
+Low:
+Switch id: 129 Time: 2004003
+High: 
+Low:
+Switch id: 128 Time: 2005001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2005002
+High: 
+Low:
+Switch id: 142 Time: 2005002
+High: 
+Low:2 
+Switch id: 137 Time: 2005002
+High: 
+Low:
+Switch id: 139 Time: 2005002
+High: 
+Low:
+Switch id: 138 Time: 2005002
+High: 
+Low:
+Switch id: 136 Time: 2005002
+High: 2 
+Low:
+Switch id: 140 Time: 2005002
+High: 2 
+Low:
+Switch id: 141 Time: 2005002
+High: 2 
+Low:
+Switch id: 129 Time: 2005003
+High: 
+Low:
+Switch id: 128 Time: 2006001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2006002
+High: 
+Low:
+Switch id: 142 Time: 2006002
+High: 
+Low:2 
+Switch id: 137 Time: 2006002
+High: 
+Low:
+Switch id: 139 Time: 2006002
+High: 
+Low:
+Switch id: 138 Time: 2006002
+High: 
+Low:
+Switch id: 136 Time: 2006002
+High: 2 
+Low:
+Switch id: 140 Time: 2006002
+High: 2 
+Low:
+Switch id: 141 Time: 2006002
+High: 2 
+Low:
+Switch id: 129 Time: 2006003
+High: 
+Low:
+Switch id: 128 Time: 2007001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2007002
+High: 
+Low:
+Switch id: 142 Time: 2007002
+High: 
+Low:2 
+Switch id: 137 Time: 2007002
+High: 
+Low:
+Switch id: 139 Time: 2007002
+High: 
+Low:
+Switch id: 138 Time: 2007002
+High: 
+Low:
+Switch id: 136 Time: 2007002
+High: 2 
+Low:
+Switch id: 140 Time: 2007002
+High: 2 
+Low:
+Switch id: 141 Time: 2007002
+High: 2 
+Low:
+Switch id: 129 Time: 2007003
+High: 
+Low:
+Switch id: 128 Time: 2008001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2008002
+High: 
+Low:
+Switch id: 142 Time: 2008002
+High: 
+Low:2 
+Switch id: 137 Time: 2008002
+High: 
+Low:
+Switch id: 139 Time: 2008002
+High: 
+Low:
+Switch id: 138 Time: 2008002
+High: 
+Low:
+Switch id: 136 Time: 2008002
+High: 2 
+Low:
+Switch id: 140 Time: 2008002
+High: 2 
+Low:
+Switch id: 141 Time: 2008002
+High: 2 
+Low:
+Switch id: 129 Time: 2008003
+High: 
+Low:
+Switch id: 128 Time: 2009001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2009002
+High: 
+Low:
+Switch id: 142 Time: 2009002
+High: 
+Low:2 
+Switch id: 137 Time: 2009002
+High: 
+Low:
+Switch id: 139 Time: 2009002
+High: 
+Low:
+Switch id: 138 Time: 2009002
+High: 
+Low:
+Switch id: 136 Time: 2009002
+High: 2 
+Low:
+Switch id: 140 Time: 2009002
+High: 2 
+Low:
+Switch id: 141 Time: 2009002
+High: 2 
+Low:
+Switch id: 129 Time: 2009003
+High: 
+Low:
+Switch id: 128 Time: 2010001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2010002
+High: 
+Low:
+Switch id: 142 Time: 2010002
+High: 
+Low:2 
+Switch id: 137 Time: 2010002
+High: 
+Low:
+Switch id: 139 Time: 2010002
+High: 
+Low:
+Switch id: 138 Time: 2010002
+High: 
+Low:
+Switch id: 136 Time: 2010002
+High: 2 
+Low:
+Switch id: 140 Time: 2010002
+High: 2 
+Low:
+Switch id: 141 Time: 2010002
+High: 2 
+Low:
+Switch id: 129 Time: 2010003
+High: 
+Low:
+Switch id: 128 Time: 2011001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2011002
+High: 
+Low:
+Switch id: 142 Time: 2011002
+High: 
+Low:2 
+Switch id: 137 Time: 2011002
+High: 
+Low:
+Switch id: 139 Time: 2011002
+High: 
+Low:
+Switch id: 138 Time: 2011002
+High: 
+Low:
+Switch id: 136 Time: 2011002
+High: 2 
+Low:
+Switch id: 140 Time: 2011002
+High: 2 
+Low:
+Switch id: 141 Time: 2011002
+High: 2 
+Low:
+Switch id: 129 Time: 2011003
+High: 
+Low:
+Switch id: 128 Time: 2012001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2012002
+High: 
+Low:
+Switch id: 142 Time: 2012002
+High: 
+Low:2 
+Switch id: 137 Time: 2012002
+High: 
+Low:
+Switch id: 139 Time: 2012002
+High: 
+Low:
+Switch id: 138 Time: 2012002
+High: 
+Low:
+Switch id: 136 Time: 2012002
+High: 2 
+Low:
+Switch id: 140 Time: 2012002
+High: 2 
+Low:
+Switch id: 141 Time: 2012002
+High: 2 
+Low:
+Switch id: 129 Time: 2012003
+High: 
+Low:
+Switch id: 128 Time: 2013001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2013002
+High: 
+Low:
+Switch id: 142 Time: 2013002
+High: 
+Low:2 
+Switch id: 137 Time: 2013002
+High: 
+Low:
+Switch id: 139 Time: 2013002
+High: 
+Low:
+Switch id: 138 Time: 2013002
+High: 
+Low:
+Switch id: 136 Time: 2013002
+High: 2 
+Low:
+Switch id: 140 Time: 2013002
+High: 2 
+Low:
+Switch id: 141 Time: 2013002
+High: 2 
+Low:
+Switch id: 129 Time: 2013003
+High: 
+Low:
+Switch id: 128 Time: 2014001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2014002
+High: 
+Low:
+Switch id: 142 Time: 2014002
+High: 
+Low:2 
+Switch id: 137 Time: 2014002
+High: 
+Low:
+Switch id: 139 Time: 2014002
+High: 
+Low:
+Switch id: 138 Time: 2014002
+High: 
+Low:
+Switch id: 136 Time: 2014002
+High: 2 
+Low:
+Switch id: 140 Time: 2014002
+High: 2 
+Low:
+Switch id: 141 Time: 2014002
+High: 2 
+Low:
+Switch id: 129 Time: 2014003
+High: 
+Low:
+Switch id: 128 Time: 2015001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2015002
+High: 
+Low:
+Switch id: 142 Time: 2015002
+High: 
+Low:2 
+Switch id: 137 Time: 2015002
+High: 
+Low:
+Switch id: 139 Time: 2015002
+High: 
+Low:
+Switch id: 138 Time: 2015002
+High: 
+Low:
+Switch id: 136 Time: 2015002
+High: 2 
+Low:
+Switch id: 140 Time: 2015002
+High: 2 
+Low:
+Switch id: 141 Time: 2015002
+High: 2 
+Low:
+Switch id: 129 Time: 2015003
+High: 
+Low:
+Switch id: 128 Time: 2016001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2016002
+High: 
+Low:
+Switch id: 142 Time: 2016002
+High: 
+Low:2 
+Switch id: 137 Time: 2016002
+High: 
+Low:
+Switch id: 139 Time: 2016002
+High: 
+Low:
+Switch id: 138 Time: 2016002
+High: 
+Low:
+Switch id: 136 Time: 2016002
+High: 2 
+Low:
+Switch id: 140 Time: 2016002
+High: 2 
+Low:
+Switch id: 141 Time: 2016002
+High: 2 
+Low:
+Switch id: 129 Time: 2016003
+High: 
+Low:
+Switch id: 128 Time: 2017001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2017002
+High: 
+Low:
+Switch id: 142 Time: 2017002
+High: 
+Low:2 
+Switch id: 137 Time: 2017002
+High: 
+Low:
+Switch id: 139 Time: 2017002
+High: 
+Low:
+Switch id: 138 Time: 2017002
+High: 
+Low:
+Switch id: 136 Time: 2017002
+High: 2 
+Low:
+Switch id: 140 Time: 2017002
+High: 2 
+Low:
+Switch id: 141 Time: 2017002
+High: 2 
+Low:
+Switch id: 129 Time: 2017003
+High: 
+Low:
+Switch id: 128 Time: 2018001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2018002
+High: 
+Low:
+Switch id: 142 Time: 2018002
+High: 
+Low:2 
+Switch id: 137 Time: 2018002
+High: 
+Low:
+Switch id: 139 Time: 2018002
+High: 
+Low:
+Switch id: 138 Time: 2018002
+High: 
+Low:
+Switch id: 136 Time: 2018002
+High: 2 
+Low:
+Switch id: 140 Time: 2018002
+High: 2 
+Low:
+Switch id: 141 Time: 2018002
+High: 2 
+Low:
+Switch id: 129 Time: 2018003
+High: 
+Low:
+Switch id: 128 Time: 2019001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2019002
+High: 
+Low:
+Switch id: 142 Time: 2019002
+High: 
+Low:2 
+Switch id: 137 Time: 2019002
+High: 
+Low:
+Switch id: 139 Time: 2019002
+High: 
+Low:
+Switch id: 138 Time: 2019002
+High: 
+Low:
+Switch id: 136 Time: 2019002
+High: 2 
+Low:
+Switch id: 140 Time: 2019002
+High: 2 
+Low:
+Switch id: 141 Time: 2019002
+High: 2 
+Low:
+Switch id: 129 Time: 2019003
+High: 
+Low:
+Switch id: 128 Time: 2020001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2020002
+High: 
+Low:
+Switch id: 142 Time: 2020002
+High: 
+Low:2 
+Switch id: 137 Time: 2020002
+High: 
+Low:
+Switch id: 139 Time: 2020002
+High: 
+Low:
+Switch id: 138 Time: 2020002
+High: 
+Low:
+Switch id: 136 Time: 2020002
+High: 2 
+Low:
+Switch id: 140 Time: 2020002
+High: 2 
+Low:
+Switch id: 141 Time: 2020002
+High: 2 
+Low:
+Switch id: 129 Time: 2020003
+High: 
+Low:
+Switch id: 128 Time: 2021001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2021002
+High: 
+Low:
+Switch id: 142 Time: 2021002
+High: 
+Low:2 
+Switch id: 137 Time: 2021002
+High: 
+Low:
+Switch id: 139 Time: 2021002
+High: 
+Low:
+Switch id: 138 Time: 2021002
+High: 
+Low:
+Switch id: 136 Time: 2021002
+High: 2 
+Low:
+Switch id: 140 Time: 2021002
+High: 2 
+Low:
+Switch id: 141 Time: 2021002
+High: 2 
+Low:
+Switch id: 129 Time: 2021003
+High: 
+Low:
+Switch id: 128 Time: 2022001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2022002
+High: 
+Low:
+Switch id: 142 Time: 2022002
+High: 
+Low:2 
+Switch id: 137 Time: 2022002
+High: 
+Low:
+Switch id: 139 Time: 2022002
+High: 
+Low:
+Switch id: 138 Time: 2022002
+High: 
+Low:
+Switch id: 136 Time: 2022002
+High: 2 
+Low:
+Switch id: 140 Time: 2022002
+High: 2 
+Low:
+Switch id: 141 Time: 2022002
+High: 2 
+Low:
+Switch id: 129 Time: 2022003
+High: 
+Low:
+Switch id: 128 Time: 2023001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2023002
+High: 
+Low:
+Switch id: 142 Time: 2023002
+High: 
+Low:2 
+Switch id: 137 Time: 2023002
+High: 
+Low:
+Switch id: 139 Time: 2023002
+High: 
+Low:
+Switch id: 138 Time: 2023002
+High: 
+Low:
+Switch id: 136 Time: 2023002
+High: 2 
+Low:
+Switch id: 140 Time: 2023002
+High: 2 
+Low:
+Switch id: 141 Time: 2023002
+High: 2 
+Low:
+Switch id: 129 Time: 2023003
+High: 
+Low:
+Switch id: 128 Time: 2024001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2024002
+High: 
+Low:
+Switch id: 142 Time: 2024002
+High: 
+Low:2 
+Switch id: 137 Time: 2024002
+High: 
+Low:
+Switch id: 139 Time: 2024002
+High: 
+Low:
+Switch id: 138 Time: 2024002
+High: 
+Low:
+Switch id: 136 Time: 2024002
+High: 2 
+Low:
+Switch id: 140 Time: 2024002
+High: 2 
+Low:
+Switch id: 141 Time: 2024002
+High: 2 
+Low:
+Switch id: 129 Time: 2024003
+High: 
+Low:
+Switch id: 128 Time: 2025001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2025002
+High: 
+Low:
+Switch id: 142 Time: 2025002
+High: 
+Low:2 
+Switch id: 137 Time: 2025002
+High: 
+Low:
+Switch id: 139 Time: 2025002
+High: 
+Low:
+Switch id: 138 Time: 2025002
+High: 
+Low:
+Switch id: 136 Time: 2025002
+High: 2 
+Low:
+Switch id: 140 Time: 2025002
+High: 2 
+Low:
+Switch id: 141 Time: 2025002
+High: 2 
+Low:
+Switch id: 129 Time: 2025003
+High: 
+Low:
+Switch id: 128 Time: 2026001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2026002
+High: 
+Low:
+Switch id: 142 Time: 2026002
+High: 
+Low:2 
+Switch id: 137 Time: 2026002
+High: 
+Low:
+Switch id: 139 Time: 2026002
+High: 
+Low:
+Switch id: 138 Time: 2026002
+High: 
+Low:
+Switch id: 136 Time: 2026002
+High: 2 
+Low:
+Switch id: 140 Time: 2026002
+High: 2 
+Low:
+Switch id: 141 Time: 2026002
+High: 2 
+Low:
+Switch id: 129 Time: 2026003
+High: 
+Low:
+Switch id: 128 Time: 2027001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2027002
+High: 
+Low:
+Switch id: 142 Time: 2027002
+High: 
+Low:2 
+Switch id: 137 Time: 2027002
+High: 
+Low:
+Switch id: 139 Time: 2027002
+High: 
+Low:
+Switch id: 138 Time: 2027002
+High: 
+Low:
+Switch id: 136 Time: 2027002
+High: 2 
+Low:
+Switch id: 140 Time: 2027002
+High: 2 
+Low:
+Switch id: 141 Time: 2027002
+High: 2 
+Low:
+Switch id: 129 Time: 2027003
+High: 
+Low:
+Switch id: 128 Time: 2028001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2028002
+High: 
+Low:
+Switch id: 142 Time: 2028002
+High: 
+Low:2 
+Switch id: 137 Time: 2028002
+High: 
+Low:
+Switch id: 139 Time: 2028002
+High: 
+Low:
+Switch id: 138 Time: 2028002
+High: 
+Low:
+Switch id: 136 Time: 2028002
+High: 2 
+Low:
+Switch id: 140 Time: 2028002
+High: 2 
+Low:
+Switch id: 141 Time: 2028002
+High: 2 
+Low:
+Switch id: 129 Time: 2028003
+High: 
+Low:
+Switch id: 128 Time: 2029001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2029002
+High: 
+Low:
+Switch id: 142 Time: 2029002
+High: 
+Low:2 
+Switch id: 137 Time: 2029002
+High: 
+Low:
+Switch id: 139 Time: 2029002
+High: 
+Low:
+Switch id: 138 Time: 2029002
+High: 
+Low:
+Switch id: 136 Time: 2029002
+High: 2 
+Low:
+Switch id: 140 Time: 2029002
+High: 2 
+Low:
+Switch id: 141 Time: 2029002
+High: 2 
+Low:
+Switch id: 129 Time: 2029003
+High: 
+Low:
+Switch id: 128 Time: 2030001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2030002
+High: 
+Low:
+Switch id: 142 Time: 2030002
+High: 
+Low:2 
+Switch id: 137 Time: 2030002
+High: 
+Low:
+Switch id: 139 Time: 2030002
+High: 
+Low:
+Switch id: 138 Time: 2030002
+High: 
+Low:
+Switch id: 136 Time: 2030002
+High: 2 
+Low:
+Switch id: 140 Time: 2030002
+High: 2 
+Low:
+Switch id: 141 Time: 2030002
+High: 2 
+Low:
+Switch id: 129 Time: 2030003
+High: 
+Low:
+Switch id: 128 Time: 2031001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2031002
+High: 
+Low:
+Switch id: 142 Time: 2031002
+High: 
+Low:2 
+Switch id: 137 Time: 2031002
+High: 
+Low:
+Switch id: 139 Time: 2031002
+High: 
+Low:
+Switch id: 138 Time: 2031002
+High: 
+Low:
+Switch id: 136 Time: 2031002
+High: 2 
+Low:
+Switch id: 140 Time: 2031002
+High: 2 
+Low:
+Switch id: 141 Time: 2031002
+High: 2 
+Low:
+Switch id: 129 Time: 2031003
+High: 
+Low:
+Switch id: 128 Time: 2032001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2032002
+High: 
+Low:
+Switch id: 142 Time: 2032002
+High: 
+Low:2 
+Switch id: 137 Time: 2032002
+High: 
+Low:
+Switch id: 139 Time: 2032002
+High: 
+Low:
+Switch id: 138 Time: 2032002
+High: 
+Low:
+Switch id: 136 Time: 2032002
+High: 2 
+Low:
+Switch id: 140 Time: 2032002
+High: 2 
+Low:
+Switch id: 141 Time: 2032002
+High: 2 
+Low:
+Switch id: 129 Time: 2032003
+High: 
+Low:
+Switch id: 128 Time: 2033001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2033002
+High: 
+Low:
+Switch id: 142 Time: 2033002
+High: 
+Low:2 
+Switch id: 137 Time: 2033002
+High: 
+Low:
+Switch id: 139 Time: 2033002
+High: 
+Low:
+Switch id: 138 Time: 2033002
+High: 
+Low:
+Switch id: 136 Time: 2033002
+High: 2 
+Low:
+Switch id: 140 Time: 2033002
+High: 2 
+Low:
+Switch id: 141 Time: 2033002
+High: 2 
+Low:
+Switch id: 129 Time: 2033003
+High: 
+Low:
+Switch id: 128 Time: 2034001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2034002
+High: 
+Low:
+Switch id: 142 Time: 2034002
+High: 
+Low:2 
+Switch id: 137 Time: 2034002
+High: 
+Low:
+Switch id: 139 Time: 2034002
+High: 
+Low:
+Switch id: 138 Time: 2034002
+High: 
+Low:
+Switch id: 136 Time: 2034002
+High: 2 
+Low:
+Switch id: 140 Time: 2034002
+High: 2 
+Low:
+Switch id: 141 Time: 2034002
+High: 2 
+Low:
+Switch id: 129 Time: 2034003
+High: 
+Low:
+Switch id: 128 Time: 2035001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2035002
+High: 
+Low:
+Switch id: 142 Time: 2035002
+High: 
+Low:2 
+Switch id: 137 Time: 2035002
+High: 
+Low:
+Switch id: 139 Time: 2035002
+High: 
+Low:
+Switch id: 138 Time: 2035002
+High: 
+Low:
+Switch id: 136 Time: 2035002
+High: 2 
+Low:
+Switch id: 140 Time: 2035002
+High: 2 
+Low:
+Switch id: 141 Time: 2035002
+High: 2 
+Low:
+Switch id: 129 Time: 2035003
+High: 
+Low:
+Switch id: 128 Time: 2036001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2036002
+High: 
+Low:
+Switch id: 142 Time: 2036002
+High: 
+Low:2 
+Switch id: 137 Time: 2036002
+High: 
+Low:
+Switch id: 139 Time: 2036002
+High: 
+Low:
+Switch id: 138 Time: 2036002
+High: 
+Low:
+Switch id: 136 Time: 2036002
+High: 2 
+Low:
+Switch id: 140 Time: 2036002
+High: 2 
+Low:
+Switch id: 141 Time: 2036002
+High: 2 
+Low:
+Switch id: 129 Time: 2036003
+High: 
+Low:
+Switch id: 128 Time: 2037001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2037002
+High: 
+Low:
+Switch id: 142 Time: 2037002
+High: 
+Low:2 
+Switch id: 137 Time: 2037002
+High: 
+Low:
+Switch id: 139 Time: 2037002
+High: 
+Low:
+Switch id: 138 Time: 2037002
+High: 
+Low:
+Switch id: 136 Time: 2037002
+High: 2 
+Low:
+Switch id: 140 Time: 2037002
+High: 2 
+Low:
+Switch id: 141 Time: 2037002
+High: 2 
+Low:
+Switch id: 129 Time: 2037003
+High: 
+Low:
+Switch id: 128 Time: 2038001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2038002
+High: 
+Low:
+Switch id: 142 Time: 2038002
+High: 
+Low:2 
+Switch id: 137 Time: 2038002
+High: 
+Low:
+Switch id: 139 Time: 2038002
+High: 
+Low:
+Switch id: 138 Time: 2038002
+High: 
+Low:
+Switch id: 136 Time: 2038002
+High: 2 
+Low:
+Switch id: 140 Time: 2038002
+High: 2 
+Low:
+Switch id: 141 Time: 2038002
+High: 2 
+Low:
+Switch id: 129 Time: 2038003
+High: 
+Low:
+Switch id: 128 Time: 2039001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2039002
+High: 
+Low:
+Switch id: 142 Time: 2039002
+High: 
+Low:2 
+Switch id: 137 Time: 2039002
+High: 
+Low:
+Switch id: 139 Time: 2039002
+High: 
+Low:
+Switch id: 138 Time: 2039002
+High: 
+Low:
+Switch id: 136 Time: 2039002
+High: 2 
+Low:
+Switch id: 140 Time: 2039002
+High: 2 
+Low:
+Switch id: 141 Time: 2039002
+High: 2 
+Low:
+Switch id: 129 Time: 2039003
+High: 
+Low:
+Switch id: 128 Time: 2040001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2040002
+High: 
+Low:
+Switch id: 142 Time: 2040002
+High: 
+Low:2 
+Switch id: 137 Time: 2040002
+High: 
+Low:
+Switch id: 139 Time: 2040002
+High: 
+Low:
+Switch id: 138 Time: 2040002
+High: 
+Low:
+Switch id: 136 Time: 2040002
+High: 2 
+Low:
+Switch id: 140 Time: 2040002
+High: 2 
+Low:
+Switch id: 141 Time: 2040002
+High: 2 
+Low:
+Switch id: 129 Time: 2040003
+High: 
+Low:
+Switch id: 128 Time: 2041001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2041002
+High: 
+Low:
+Switch id: 142 Time: 2041002
+High: 
+Low:2 
+Switch id: 137 Time: 2041002
+High: 
+Low:
+Switch id: 139 Time: 2041002
+High: 
+Low:
+Switch id: 138 Time: 2041002
+High: 
+Low:
+Switch id: 136 Time: 2041002
+High: 2 
+Low:
+Switch id: 140 Time: 2041002
+High: 2 
+Low:
+Switch id: 141 Time: 2041002
+High: 2 
+Low:
+Switch id: 129 Time: 2041003
+High: 
+Low:
+Switch id: 128 Time: 2042001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2042002
+High: 
+Low:
+Switch id: 142 Time: 2042002
+High: 
+Low:2 
+Switch id: 137 Time: 2042002
+High: 
+Low:
+Switch id: 139 Time: 2042002
+High: 
+Low:
+Switch id: 138 Time: 2042002
+High: 
+Low:
+Switch id: 136 Time: 2042002
+High: 2 
+Low:
+Switch id: 140 Time: 2042002
+High: 2 
+Low:
+Switch id: 141 Time: 2042002
+High: 2 
+Low:
+Switch id: 129 Time: 2042003
+High: 
+Low:
+Switch id: 128 Time: 2043001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2043002
+High: 
+Low:
+Switch id: 142 Time: 2043002
+High: 
+Low:2 
+Switch id: 137 Time: 2043002
+High: 
+Low:
+Switch id: 139 Time: 2043002
+High: 
+Low:
+Switch id: 138 Time: 2043002
+High: 
+Low:
+Switch id: 136 Time: 2043002
+High: 2 
+Low:
+Switch id: 140 Time: 2043002
+High: 2 
+Low:
+Switch id: 141 Time: 2043002
+High: 2 
+Low:
+Switch id: 129 Time: 2043003
+High: 
+Low:
+Switch id: 128 Time: 2044001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2044002
+High: 
+Low:
+Switch id: 142 Time: 2044002
+High: 
+Low:2 
+Switch id: 137 Time: 2044002
+High: 
+Low:
+Switch id: 139 Time: 2044002
+High: 
+Low:
+Switch id: 138 Time: 2044002
+High: 
+Low:
+Switch id: 136 Time: 2044002
+High: 2 
+Low:
+Switch id: 140 Time: 2044002
+High: 2 
+Low:
+Switch id: 141 Time: 2044002
+High: 2 
+Low:
+Switch id: 129 Time: 2044003
+High: 
+Low:
+Switch id: 128 Time: 2045001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2045002
+High: 
+Low:
+Switch id: 142 Time: 2045002
+High: 
+Low:2 
+Switch id: 137 Time: 2045002
+High: 
+Low:
+Switch id: 139 Time: 2045002
+High: 
+Low:
+Switch id: 138 Time: 2045002
+High: 
+Low:
+Switch id: 136 Time: 2045002
+High: 2 
+Low:
+Switch id: 140 Time: 2045002
+High: 2 
+Low:
+Switch id: 141 Time: 2045002
+High: 2 
+Low:
+Switch id: 129 Time: 2045003
+High: 
+Low:
+Switch id: 128 Time: 2046001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2046002
+High: 
+Low:
+Switch id: 142 Time: 2046002
+High: 
+Low:2 
+Switch id: 137 Time: 2046002
+High: 
+Low:
+Switch id: 139 Time: 2046002
+High: 
+Low:
+Switch id: 138 Time: 2046002
+High: 
+Low:
+Switch id: 136 Time: 2046002
+High: 2 
+Low:
+Switch id: 140 Time: 2046002
+High: 2 
+Low:
+Switch id: 141 Time: 2046002
+High: 2 
+Low:
+Switch id: 129 Time: 2046003
+High: 
+Low:
+Switch id: 128 Time: 2047001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2047002
+High: 
+Low:
+Switch id: 142 Time: 2047002
+High: 
+Low:2 
+Switch id: 137 Time: 2047002
+High: 
+Low:
+Switch id: 139 Time: 2047002
+High: 
+Low:
+Switch id: 138 Time: 2047002
+High: 
+Low:
+Switch id: 136 Time: 2047002
+High: 2 
+Low:
+Switch id: 140 Time: 2047002
+High: 2 
+Low:
+Switch id: 141 Time: 2047002
+High: 2 
+Low:
+Switch id: 129 Time: 2047003
+High: 
+Low:
+Switch id: 128 Time: 2048001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2048002
+High: 
+Low:
+Switch id: 142 Time: 2048002
+High: 
+Low:2 
+Switch id: 137 Time: 2048002
+High: 
+Low:
+Switch id: 139 Time: 2048002
+High: 
+Low:
+Switch id: 138 Time: 2048002
+High: 
+Low:
+Switch id: 136 Time: 2048002
+High: 2 
+Low:
+Switch id: 140 Time: 2048002
+High: 2 
+Low:
+Switch id: 141 Time: 2048002
+High: 2 
+Low:
+Switch id: 129 Time: 2048003
+High: 
+Low:
+Switch id: 128 Time: 2049001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2049002
+High: 
+Low:
+Switch id: 142 Time: 2049002
+High: 
+Low:2 
+Switch id: 137 Time: 2049002
+High: 
+Low:
+Switch id: 139 Time: 2049002
+High: 
+Low:
+Switch id: 138 Time: 2049002
+High: 
+Low:
+Switch id: 136 Time: 2049002
+High: 2 
+Low:
+Switch id: 140 Time: 2049002
+High: 2 
+Low:
+Switch id: 141 Time: 2049002
+High: 2 
+Low:
+Switch id: 129 Time: 2049003
+High: 
+Low:
+Switch id: 128 Time: 2050001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2050002
+High: 
+Low:
+Switch id: 142 Time: 2050002
+High: 
+Low:2 
+Switch id: 137 Time: 2050002
+High: 
+Low:
+Switch id: 139 Time: 2050002
+High: 
+Low:
+Switch id: 138 Time: 2050002
+High: 
+Low:
+Switch id: 136 Time: 2050002
+High: 2 
+Low:
+Switch id: 140 Time: 2050002
+High: 2 
+Low:
+Switch id: 141 Time: 2050002
+High: 2 
+Low:
+Switch id: 129 Time: 2050003
+High: 
+Low:
+Switch id: 128 Time: 2051001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2051002
+High: 
+Low:
+Switch id: 142 Time: 2051002
+High: 
+Low:2 
+Switch id: 137 Time: 2051002
+High: 
+Low:
+Switch id: 139 Time: 2051002
+High: 
+Low:
+Switch id: 138 Time: 2051002
+High: 
+Low:
+Switch id: 136 Time: 2051002
+High: 2 
+Low:
+Switch id: 140 Time: 2051002
+High: 2 
+Low:
+Switch id: 141 Time: 2051002
+High: 2 
+Low:
+Switch id: 129 Time: 2051003
+High: 
+Low:
+Switch id: 128 Time: 2052001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2052002
+High: 
+Low:
+Switch id: 142 Time: 2052002
+High: 
+Low:2 
+Switch id: 137 Time: 2052002
+High: 
+Low:
+Switch id: 139 Time: 2052002
+High: 
+Low:
+Switch id: 138 Time: 2052002
+High: 
+Low:
+Switch id: 136 Time: 2052002
+High: 2 
+Low:
+Switch id: 140 Time: 2052002
+High: 2 
+Low:
+Switch id: 141 Time: 2052002
+High: 2 
+Low:
+Switch id: 129 Time: 2052003
+High: 
+Low:
+Switch id: 128 Time: 2053001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2053002
+High: 
+Low:
+Switch id: 142 Time: 2053002
+High: 
+Low:2 
+Switch id: 137 Time: 2053002
+High: 
+Low:
+Switch id: 139 Time: 2053002
+High: 
+Low:
+Switch id: 138 Time: 2053002
+High: 
+Low:
+Switch id: 136 Time: 2053002
+High: 2 
+Low:
+Switch id: 140 Time: 2053002
+High: 2 
+Low:
+Switch id: 141 Time: 2053002
+High: 2 
+Low:
+Switch id: 129 Time: 2053003
+High: 
+Low:
+Switch id: 128 Time: 2054001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2054002
+High: 
+Low:
+Switch id: 142 Time: 2054002
+High: 
+Low:2 
+Switch id: 137 Time: 2054002
+High: 
+Low:
+Switch id: 139 Time: 2054002
+High: 
+Low:
+Switch id: 138 Time: 2054002
+High: 
+Low:
+Switch id: 136 Time: 2054002
+High: 2 
+Low:
+Switch id: 140 Time: 2054002
+High: 2 
+Low:
+Switch id: 141 Time: 2054002
+High: 2 
+Low:
+Switch id: 129 Time: 2054003
+High: 
+Low:
+Switch id: 128 Time: 2055001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2055002
+High: 
+Low:
+Switch id: 142 Time: 2055002
+High: 
+Low:2 
+Switch id: 137 Time: 2055002
+High: 
+Low:
+Switch id: 139 Time: 2055002
+High: 
+Low:
+Switch id: 138 Time: 2055002
+High: 
+Low:
+Switch id: 136 Time: 2055002
+High: 2 
+Low:
+Switch id: 140 Time: 2055002
+High: 2 
+Low:
+Switch id: 141 Time: 2055002
+High: 2 
+Low:
+Switch id: 129 Time: 2055003
+High: 
+Low:
+Switch id: 128 Time: 2056001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2056002
+High: 
+Low:
+Switch id: 142 Time: 2056002
+High: 
+Low:2 
+Switch id: 137 Time: 2056002
+High: 
+Low:
+Switch id: 139 Time: 2056002
+High: 
+Low:
+Switch id: 138 Time: 2056002
+High: 
+Low:
+Switch id: 136 Time: 2056002
+High: 2 
+Low:
+Switch id: 140 Time: 2056002
+High: 2 
+Low:
+Switch id: 141 Time: 2056002
+High: 2 
+Low:
+Switch id: 129 Time: 2056003
+High: 
+Low:
+Switch id: 128 Time: 2057001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2057002
+High: 
+Low:
+Switch id: 142 Time: 2057002
+High: 
+Low:2 
+Switch id: 137 Time: 2057002
+High: 
+Low:
+Switch id: 139 Time: 2057002
+High: 
+Low:
+Switch id: 138 Time: 2057002
+High: 
+Low:
+Switch id: 136 Time: 2057002
+High: 2 
+Low:
+Switch id: 140 Time: 2057002
+High: 2 
+Low:
+Switch id: 141 Time: 2057002
+High: 2 
+Low:
+Switch id: 129 Time: 2057003
+High: 
+Low:
+Switch id: 128 Time: 2058001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2058002
+High: 
+Low:
+Switch id: 142 Time: 2058002
+High: 
+Low:2 
+Switch id: 137 Time: 2058002
+High: 
+Low:
+Switch id: 139 Time: 2058002
+High: 
+Low:
+Switch id: 138 Time: 2058002
+High: 
+Low:
+Switch id: 136 Time: 2058002
+High: 2 
+Low:
+Switch id: 140 Time: 2058002
+High: 2 
+Low:
+Switch id: 141 Time: 2058002
+High: 2 
+Low:
+Switch id: 129 Time: 2058003
+High: 
+Low:
+Switch id: 128 Time: 2059001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2059002
+High: 
+Low:
+Switch id: 142 Time: 2059002
+High: 
+Low:2 
+Switch id: 137 Time: 2059002
+High: 
+Low:
+Switch id: 139 Time: 2059002
+High: 
+Low:
+Switch id: 138 Time: 2059002
+High: 
+Low:
+Switch id: 136 Time: 2059002
+High: 2 
+Low:
+Switch id: 140 Time: 2059002
+High: 2 
+Low:
+Switch id: 141 Time: 2059002
+High: 2 
+Low:
+Switch id: 129 Time: 2059003
+High: 
+Low:
+Switch id: 128 Time: 2060001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2060002
+High: 
+Low:
+Switch id: 142 Time: 2060002
+High: 
+Low:2 
+Switch id: 137 Time: 2060002
+High: 
+Low:
+Switch id: 139 Time: 2060002
+High: 
+Low:
+Switch id: 138 Time: 2060002
+High: 
+Low:
+Switch id: 136 Time: 2060002
+High: 2 
+Low:
+Switch id: 140 Time: 2060002
+High: 2 
+Low:
+Switch id: 141 Time: 2060002
+High: 2 
+Low:
+Switch id: 129 Time: 2060003
+High: 
+Low:
+Switch id: 128 Time: 2061001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2061002
+High: 
+Low:
+Switch id: 142 Time: 2061002
+High: 
+Low:2 
+Switch id: 137 Time: 2061002
+High: 
+Low:
+Switch id: 139 Time: 2061002
+High: 
+Low:
+Switch id: 138 Time: 2061002
+High: 
+Low:
+Switch id: 136 Time: 2061002
+High: 2 
+Low:
+Switch id: 140 Time: 2061002
+High: 2 
+Low:
+Switch id: 141 Time: 2061002
+High: 2 
+Low:
+Switch id: 129 Time: 2061003
+High: 
+Low:
+Switch id: 128 Time: 2062001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2062002
+High: 
+Low:
+Switch id: 142 Time: 2062002
+High: 
+Low:2 
+Switch id: 137 Time: 2062002
+High: 
+Low:
+Switch id: 139 Time: 2062002
+High: 
+Low:
+Switch id: 138 Time: 2062002
+High: 
+Low:
+Switch id: 136 Time: 2062002
+High: 2 
+Low:
+Switch id: 140 Time: 2062002
+High: 2 
+Low:
+Switch id: 141 Time: 2062002
+High: 2 
+Low:
+Switch id: 129 Time: 2062003
+High: 
+Low:
+Switch id: 128 Time: 2063001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2063002
+High: 
+Low:
+Switch id: 142 Time: 2063002
+High: 
+Low:2 
+Switch id: 137 Time: 2063002
+High: 
+Low:
+Switch id: 139 Time: 2063002
+High: 
+Low:
+Switch id: 138 Time: 2063002
+High: 
+Low:
+Switch id: 136 Time: 2063002
+High: 2 
+Low:
+Switch id: 140 Time: 2063002
+High: 2 
+Low:
+Switch id: 141 Time: 2063002
+High: 2 
+Low:
+Switch id: 129 Time: 2063003
+High: 
+Low:
+Switch id: 128 Time: 2064001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2064002
+High: 
+Low:
+Switch id: 142 Time: 2064002
+High: 
+Low:2 
+Switch id: 137 Time: 2064002
+High: 
+Low:
+Switch id: 139 Time: 2064002
+High: 
+Low:
+Switch id: 138 Time: 2064002
+High: 
+Low:
+Switch id: 136 Time: 2064002
+High: 2 
+Low:
+Switch id: 140 Time: 2064002
+High: 2 
+Low:
+Switch id: 141 Time: 2064002
+High: 2 
+Low:
+Switch id: 129 Time: 2064003
+High: 
+Low:
+Switch id: 128 Time: 2065001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2065002
+High: 
+Low:
+Switch id: 142 Time: 2065002
+High: 
+Low:2 
+Switch id: 137 Time: 2065002
+High: 
+Low:
+Switch id: 139 Time: 2065002
+High: 
+Low:
+Switch id: 138 Time: 2065002
+High: 
+Low:
+Switch id: 136 Time: 2065002
+High: 2 
+Low:
+Switch id: 140 Time: 2065002
+High: 2 
+Low:
+Switch id: 141 Time: 2065002
+High: 2 
+Low:
+Switch id: 129 Time: 2065003
+High: 
+Low:
+Switch id: 128 Time: 2066001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2066002
+High: 
+Low:
+Switch id: 142 Time: 2066002
+High: 
+Low:2 
+Switch id: 137 Time: 2066002
+High: 
+Low:
+Switch id: 139 Time: 2066002
+High: 
+Low:
+Switch id: 138 Time: 2066002
+High: 
+Low:
+Switch id: 136 Time: 2066002
+High: 2 
+Low:
+Switch id: 140 Time: 2066002
+High: 2 
+Low:
+Switch id: 141 Time: 2066002
+High: 2 
+Low:
+Switch id: 129 Time: 2066003
+High: 
+Low:
+Switch id: 128 Time: 2067001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2067002
+High: 
+Low:
+Switch id: 142 Time: 2067002
+High: 
+Low:2 
+Switch id: 137 Time: 2067002
+High: 
+Low:
+Switch id: 139 Time: 2067002
+High: 
+Low:
+Switch id: 138 Time: 2067002
+High: 
+Low:
+Switch id: 136 Time: 2067002
+High: 2 
+Low:
+Switch id: 140 Time: 2067002
+High: 2 
+Low:
+Switch id: 141 Time: 2067002
+High: 2 
+Low:
+Switch id: 129 Time: 2067003
+High: 
+Low:
+Switch id: 128 Time: 2068001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2068002
+High: 
+Low:
+Switch id: 142 Time: 2068002
+High: 
+Low:2 
+Switch id: 137 Time: 2068002
+High: 
+Low:
+Switch id: 139 Time: 2068002
+High: 
+Low:
+Switch id: 138 Time: 2068002
+High: 
+Low:
+Switch id: 136 Time: 2068002
+High: 2 
+Low:
+Switch id: 140 Time: 2068002
+High: 2 
+Low:
+Switch id: 141 Time: 2068002
+High: 2 
+Low:
+Switch id: 129 Time: 2068003
+High: 
+Low:
+Switch id: 128 Time: 2069001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2069002
+High: 
+Low:
+Switch id: 142 Time: 2069002
+High: 
+Low:2 
+Switch id: 137 Time: 2069002
+High: 
+Low:
+Switch id: 139 Time: 2069002
+High: 
+Low:
+Switch id: 138 Time: 2069002
+High: 
+Low:
+Switch id: 136 Time: 2069002
+High: 2 
+Low:
+Switch id: 140 Time: 2069002
+High: 2 
+Low:
+Switch id: 141 Time: 2069002
+High: 2 
+Low:
+Switch id: 129 Time: 2069003
+High: 
+Low:
+Switch id: 128 Time: 2070001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2070002
+High: 
+Low:
+Switch id: 142 Time: 2070002
+High: 
+Low:2 
+Switch id: 137 Time: 2070002
+High: 
+Low:
+Switch id: 139 Time: 2070002
+High: 
+Low:
+Switch id: 138 Time: 2070002
+High: 
+Low:
+Switch id: 136 Time: 2070002
+High: 2 
+Low:
+Switch id: 140 Time: 2070002
+High: 2 
+Low:
+Switch id: 141 Time: 2070002
+High: 2 
+Low:
+Switch id: 129 Time: 2070003
+High: 
+Low:
+Switch id: 128 Time: 2071001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2071002
+High: 
+Low:
+Switch id: 142 Time: 2071002
+High: 
+Low:2 
+Switch id: 137 Time: 2071002
+High: 
+Low:
+Switch id: 139 Time: 2071002
+High: 
+Low:
+Switch id: 138 Time: 2071002
+High: 
+Low:
+Switch id: 136 Time: 2071002
+High: 2 
+Low:
+Switch id: 140 Time: 2071002
+High: 2 
+Low:
+Switch id: 141 Time: 2071002
+High: 2 
+Low:
+Switch id: 129 Time: 2071003
+High: 
+Low:
+Switch id: 128 Time: 2072001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2072002
+High: 
+Low:
+Switch id: 142 Time: 2072002
+High: 
+Low:2 
+Switch id: 137 Time: 2072002
+High: 
+Low:
+Switch id: 139 Time: 2072002
+High: 
+Low:
+Switch id: 138 Time: 2072002
+High: 
+Low:
+Switch id: 136 Time: 2072002
+High: 2 
+Low:
+Switch id: 140 Time: 2072002
+High: 2 
+Low:
+Switch id: 141 Time: 2072002
+High: 2 
+Low:
+Switch id: 129 Time: 2072003
+High: 
+Low:
+Switch id: 128 Time: 2073001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2073002
+High: 
+Low:
+Switch id: 142 Time: 2073002
+High: 
+Low:2 
+Switch id: 137 Time: 2073002
+High: 
+Low:
+Switch id: 139 Time: 2073002
+High: 
+Low:
+Switch id: 138 Time: 2073002
+High: 
+Low:
+Switch id: 136 Time: 2073002
+High: 2 
+Low:
+Switch id: 140 Time: 2073002
+High: 2 
+Low:
+Switch id: 141 Time: 2073002
+High: 2 
+Low:
+Switch id: 129 Time: 2073003
+High: 
+Low:
+Switch id: 128 Time: 2074001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2074002
+High: 
+Low:
+Switch id: 142 Time: 2074002
+High: 
+Low:2 
+Switch id: 137 Time: 2074002
+High: 
+Low:
+Switch id: 139 Time: 2074002
+High: 
+Low:
+Switch id: 138 Time: 2074002
+High: 
+Low:
+Switch id: 136 Time: 2074002
+High: 2 
+Low:
+Switch id: 140 Time: 2074002
+High: 2 
+Low:
+Switch id: 141 Time: 2074002
+High: 2 
+Low:
+Switch id: 129 Time: 2074003
+High: 
+Low:
+Switch id: 128 Time: 2075001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2075002
+High: 
+Low:
+Switch id: 142 Time: 2075002
+High: 
+Low:2 
+Switch id: 137 Time: 2075002
+High: 
+Low:
+Switch id: 139 Time: 2075002
+High: 
+Low:
+Switch id: 138 Time: 2075002
+High: 
+Low:
+Switch id: 136 Time: 2075002
+High: 2 
+Low:
+Switch id: 140 Time: 2075002
+High: 2 
+Low:
+Switch id: 141 Time: 2075002
+High: 2 
+Low:
+Switch id: 129 Time: 2075003
+High: 
+Low:
+Switch id: 128 Time: 2076001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2076002
+High: 
+Low:
+Switch id: 142 Time: 2076002
+High: 
+Low:2 
+Switch id: 137 Time: 2076002
+High: 
+Low:
+Switch id: 139 Time: 2076002
+High: 
+Low:
+Switch id: 138 Time: 2076002
+High: 
+Low:
+Switch id: 136 Time: 2076002
+High: 2 
+Low:
+Switch id: 140 Time: 2076002
+High: 2 
+Low:
+Switch id: 141 Time: 2076002
+High: 2 
+Low:
+Switch id: 129 Time: 2076003
+High: 
+Low:
+Switch id: 128 Time: 2077001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2077002
+High: 
+Low:
+Switch id: 142 Time: 2077002
+High: 
+Low:2 
+Switch id: 137 Time: 2077002
+High: 
+Low:
+Switch id: 139 Time: 2077002
+High: 
+Low:
+Switch id: 138 Time: 2077002
+High: 
+Low:
+Switch id: 136 Time: 2077002
+High: 2 
+Low:
+Switch id: 140 Time: 2077002
+High: 2 
+Low:
+Switch id: 141 Time: 2077002
+High: 2 
+Low:
+Switch id: 129 Time: 2077003
+High: 
+Low:
+Switch id: 128 Time: 2078001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2078002
+High: 
+Low:
+Switch id: 142 Time: 2078002
+High: 
+Low:2 
+Switch id: 137 Time: 2078002
+High: 
+Low:
+Switch id: 139 Time: 2078002
+High: 
+Low:
+Switch id: 138 Time: 2078002
+High: 
+Low:
+Switch id: 136 Time: 2078002
+High: 2 
+Low:
+Switch id: 140 Time: 2078002
+High: 2 
+Low:
+Switch id: 141 Time: 2078002
+High: 2 
+Low:
+Switch id: 129 Time: 2078003
+High: 
+Low:
+Switch id: 128 Time: 2079001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2079002
+High: 
+Low:
+Switch id: 142 Time: 2079002
+High: 
+Low:2 
+Switch id: 137 Time: 2079002
+High: 
+Low:
+Switch id: 139 Time: 2079002
+High: 
+Low:
+Switch id: 138 Time: 2079002
+High: 
+Low:
+Switch id: 136 Time: 2079002
+High: 2 
+Low:
+Switch id: 140 Time: 2079002
+High: 2 
+Low:
+Switch id: 141 Time: 2079002
+High: 2 
+Low:
+Switch id: 129 Time: 2079003
+High: 
+Low:
+Switch id: 128 Time: 2080001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2080002
+High: 
+Low:
+Switch id: 142 Time: 2080002
+High: 
+Low:2 
+Switch id: 137 Time: 2080002
+High: 
+Low:
+Switch id: 139 Time: 2080002
+High: 
+Low:
+Switch id: 138 Time: 2080002
+High: 
+Low:
+Switch id: 136 Time: 2080002
+High: 2 
+Low:
+Switch id: 140 Time: 2080002
+High: 2 
+Low:
+Switch id: 141 Time: 2080002
+High: 2 
+Low:
+Switch id: 129 Time: 2080003
+High: 
+Low:
+Switch id: 128 Time: 2081001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2081002
+High: 
+Low:
+Switch id: 142 Time: 2081002
+High: 
+Low:2 
+Switch id: 137 Time: 2081002
+High: 
+Low:
+Switch id: 139 Time: 2081002
+High: 
+Low:
+Switch id: 138 Time: 2081002
+High: 
+Low:
+Switch id: 136 Time: 2081002
+High: 2 
+Low:
+Switch id: 140 Time: 2081002
+High: 2 
+Low:
+Switch id: 141 Time: 2081002
+High: 2 
+Low:
+Switch id: 129 Time: 2081003
+High: 
+Low:
+Switch id: 128 Time: 2082001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2082002
+High: 
+Low:
+Switch id: 142 Time: 2082002
+High: 
+Low:2 
+Switch id: 137 Time: 2082002
+High: 
+Low:
+Switch id: 139 Time: 2082002
+High: 
+Low:
+Switch id: 138 Time: 2082002
+High: 
+Low:
+Switch id: 136 Time: 2082002
+High: 2 
+Low:
+Switch id: 140 Time: 2082002
+High: 2 
+Low:
+Switch id: 141 Time: 2082002
+High: 2 
+Low:
+Switch id: 129 Time: 2082003
+High: 
+Low:
+Switch id: 128 Time: 2083001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2083002
+High: 
+Low:
+Switch id: 142 Time: 2083002
+High: 
+Low:2 
+Switch id: 137 Time: 2083002
+High: 
+Low:
+Switch id: 139 Time: 2083002
+High: 
+Low:
+Switch id: 138 Time: 2083002
+High: 
+Low:
+Switch id: 136 Time: 2083002
+High: 2 
+Low:
+Switch id: 140 Time: 2083002
+High: 2 
+Low:
+Switch id: 141 Time: 2083002
+High: 2 
+Low:
+Switch id: 129 Time: 2083003
+High: 
+Low:
+Switch id: 128 Time: 2084001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2084002
+High: 
+Low:
+Switch id: 142 Time: 2084002
+High: 
+Low:2 
+Switch id: 137 Time: 2084002
+High: 
+Low:
+Switch id: 139 Time: 2084002
+High: 
+Low:
+Switch id: 138 Time: 2084002
+High: 
+Low:
+Switch id: 136 Time: 2084002
+High: 2 
+Low:
+Switch id: 140 Time: 2084002
+High: 2 
+Low:
+Switch id: 141 Time: 2084002
+High: 2 
+Low:
+Switch id: 129 Time: 2084003
+High: 
+Low:
+Switch id: 128 Time: 2085001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2085002
+High: 
+Low:
+Switch id: 142 Time: 2085002
+High: 
+Low:2 
+Switch id: 137 Time: 2085002
+High: 
+Low:
+Switch id: 139 Time: 2085002
+High: 
+Low:
+Switch id: 138 Time: 2085002
+High: 
+Low:
+Switch id: 136 Time: 2085002
+High: 2 
+Low:
+Switch id: 140 Time: 2085002
+High: 2 
+Low:
+Switch id: 141 Time: 2085002
+High: 2 
+Low:
+Switch id: 129 Time: 2085003
+High: 
+Low:
+Switch id: 128 Time: 2086001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2086002
+High: 
+Low:
+Switch id: 142 Time: 2086002
+High: 
+Low:2 
+Switch id: 137 Time: 2086002
+High: 
+Low:
+Switch id: 139 Time: 2086002
+High: 
+Low:
+Switch id: 138 Time: 2086002
+High: 
+Low:
+Switch id: 136 Time: 2086002
+High: 2 
+Low:
+Switch id: 140 Time: 2086002
+High: 2 
+Low:
+Switch id: 141 Time: 2086002
+High: 2 
+Low:
+Switch id: 129 Time: 2086003
+High: 
+Low:
+Switch id: 128 Time: 2087001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2087002
+High: 
+Low:
+Switch id: 142 Time: 2087002
+High: 
+Low:2 
+Switch id: 137 Time: 2087002
+High: 
+Low:
+Switch id: 139 Time: 2087002
+High: 
+Low:
+Switch id: 138 Time: 2087002
+High: 
+Low:
+Switch id: 136 Time: 2087002
+High: 2 
+Low:
+Switch id: 140 Time: 2087002
+High: 2 
+Low:
+Switch id: 141 Time: 2087002
+High: 2 
+Low:
+Switch id: 129 Time: 2087003
+High: 
+Low:
+Switch id: 128 Time: 2088001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2088002
+High: 
+Low:
+Switch id: 142 Time: 2088002
+High: 
+Low:2 
+Switch id: 137 Time: 2088002
+High: 
+Low:
+Switch id: 139 Time: 2088002
+High: 
+Low:
+Switch id: 138 Time: 2088002
+High: 
+Low:
+Switch id: 136 Time: 2088002
+High: 2 
+Low:
+Switch id: 140 Time: 2088002
+High: 2 
+Low:
+Switch id: 141 Time: 2088002
+High: 2 
+Low:
+Switch id: 129 Time: 2088003
+High: 
+Low:
+Switch id: 128 Time: 2089001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2089002
+High: 
+Low:
+Switch id: 142 Time: 2089002
+High: 
+Low:2 
+Switch id: 137 Time: 2089002
+High: 
+Low:
+Switch id: 139 Time: 2089002
+High: 
+Low:
+Switch id: 138 Time: 2089002
+High: 
+Low:
+Switch id: 136 Time: 2089002
+High: 2 
+Low:
+Switch id: 140 Time: 2089002
+High: 2 
+Low:
+Switch id: 141 Time: 2089002
+High: 2 
+Low:
+Switch id: 129 Time: 2089003
+High: 
+Low:
+Switch id: 128 Time: 2090001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2090002
+High: 
+Low:
+Switch id: 142 Time: 2090002
+High: 
+Low:2 
+Switch id: 137 Time: 2090002
+High: 
+Low:
+Switch id: 139 Time: 2090002
+High: 
+Low:
+Switch id: 138 Time: 2090002
+High: 
+Low:
+Switch id: 136 Time: 2090002
+High: 2 
+Low:
+Switch id: 140 Time: 2090002
+High: 2 
+Low:
+Switch id: 141 Time: 2090002
+High: 2 
+Low:
+Switch id: 129 Time: 2090003
+High: 
+Low:
+Switch id: 128 Time: 2091001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2091002
+High: 
+Low:
+Switch id: 142 Time: 2091002
+High: 
+Low:2 
+Switch id: 137 Time: 2091002
+High: 
+Low:
+Switch id: 139 Time: 2091002
+High: 
+Low:
+Switch id: 138 Time: 2091002
+High: 
+Low:
+Switch id: 136 Time: 2091002
+High: 2 
+Low:
+Switch id: 140 Time: 2091002
+High: 2 
+Low:
+Switch id: 141 Time: 2091002
+High: 2 
+Low:
+Switch id: 129 Time: 2091003
+High: 
+Low:
+Switch id: 128 Time: 2092001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2092002
+High: 
+Low:
+Switch id: 142 Time: 2092002
+High: 
+Low:2 
+Switch id: 137 Time: 2092002
+High: 
+Low:
+Switch id: 139 Time: 2092002
+High: 
+Low:
+Switch id: 138 Time: 2092002
+High: 
+Low:
+Switch id: 136 Time: 2092002
+High: 2 
+Low:
+Switch id: 140 Time: 2092002
+High: 2 
+Low:
+Switch id: 141 Time: 2092002
+High: 2 
+Low:
+Switch id: 129 Time: 2092003
+High: 
+Low:
+Switch id: 128 Time: 2093001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2093002
+High: 
+Low:
+Switch id: 142 Time: 2093002
+High: 
+Low:2 
+Switch id: 137 Time: 2093002
+High: 
+Low:
+Switch id: 139 Time: 2093002
+High: 
+Low:
+Switch id: 138 Time: 2093002
+High: 
+Low:
+Switch id: 136 Time: 2093002
+High: 2 
+Low:
+Switch id: 140 Time: 2093002
+High: 2 
+Low:
+Switch id: 141 Time: 2093002
+High: 2 
+Low:
+Switch id: 129 Time: 2093003
+High: 
+Low:
+Switch id: 128 Time: 2094001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2094002
+High: 
+Low:
+Switch id: 142 Time: 2094002
+High: 
+Low:2 
+Switch id: 137 Time: 2094002
+High: 
+Low:
+Switch id: 139 Time: 2094002
+High: 
+Low:
+Switch id: 138 Time: 2094002
+High: 
+Low:
+Switch id: 136 Time: 2094002
+High: 2 
+Low:
+Switch id: 140 Time: 2094002
+High: 2 
+Low:
+Switch id: 141 Time: 2094002
+High: 2 
+Low:
+Switch id: 129 Time: 2094003
+High: 
+Low:
+Switch id: 128 Time: 2095001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2095002
+High: 
+Low:
+Switch id: 142 Time: 2095002
+High: 
+Low:2 
+Switch id: 137 Time: 2095002
+High: 
+Low:
+Switch id: 139 Time: 2095002
+High: 
+Low:
+Switch id: 138 Time: 2095002
+High: 
+Low:
+Switch id: 136 Time: 2095002
+High: 2 
+Low:
+Switch id: 140 Time: 2095002
+High: 2 
+Low:
+Switch id: 141 Time: 2095002
+High: 2 
+Low:
+Switch id: 129 Time: 2095003
+High: 
+Low:
+Switch id: 128 Time: 2096001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2096002
+High: 
+Low:
+Switch id: 142 Time: 2096002
+High: 
+Low:2 
+Switch id: 137 Time: 2096002
+High: 
+Low:
+Switch id: 139 Time: 2096002
+High: 
+Low:
+Switch id: 138 Time: 2096002
+High: 
+Low:
+Switch id: 136 Time: 2096002
+High: 2 
+Low:
+Switch id: 140 Time: 2096002
+High: 2 
+Low:
+Switch id: 141 Time: 2096002
+High: 2 
+Low:
+Switch id: 129 Time: 2096003
+High: 
+Low:
+Switch id: 128 Time: 2097001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2097002
+High: 
+Low:
+Switch id: 142 Time: 2097002
+High: 
+Low:2 
+Switch id: 137 Time: 2097002
+High: 
+Low:
+Switch id: 139 Time: 2097002
+High: 
+Low:
+Switch id: 138 Time: 2097002
+High: 
+Low:
+Switch id: 136 Time: 2097002
+High: 2 
+Low:
+Switch id: 140 Time: 2097002
+High: 2 
+Low:
+Switch id: 141 Time: 2097002
+High: 2 
+Low:
+Switch id: 129 Time: 2097003
+High: 
+Low:
+Switch id: 128 Time: 2098001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2098002
+High: 
+Low:
+Switch id: 142 Time: 2098002
+High: 
+Low:2 
+Switch id: 137 Time: 2098002
+High: 
+Low:
+Switch id: 139 Time: 2098002
+High: 
+Low:
+Switch id: 138 Time: 2098002
+High: 
+Low:
+Switch id: 136 Time: 2098002
+High: 2 
+Low:
+Switch id: 140 Time: 2098002
+High: 2 
+Low:
+Switch id: 141 Time: 2098002
+High: 2 
+Low:
+Switch id: 129 Time: 2098003
+High: 
+Low:
+Switch id: 128 Time: 2099001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2099002
+High: 
+Low:
+Switch id: 142 Time: 2099002
+High: 
+Low:2 
+Switch id: 137 Time: 2099002
+High: 
+Low:
+Switch id: 139 Time: 2099002
+High: 
+Low:
+Switch id: 138 Time: 2099002
+High: 
+Low:
+Switch id: 136 Time: 2099002
+High: 2 
+Low:
+Switch id: 140 Time: 2099002
+High: 2 
+Low:
+Switch id: 141 Time: 2099002
+High: 2 
+Low:
+Switch id: 129 Time: 2099003
+High: 
+Low:
+Switch id: 128 Time: 2100001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2100002
+High: 
+Low:
+Switch id: 142 Time: 2100002
+High: 
+Low:2 
+Switch id: 137 Time: 2100002
+High: 
+Low:
+Switch id: 139 Time: 2100002
+High: 
+Low:
+Switch id: 138 Time: 2100002
+High: 
+Low:
+Switch id: 136 Time: 2100002
+High: 2 
+Low:
+Switch id: 140 Time: 2100002
+High: 2 
+Low:
+Switch id: 141 Time: 2100002
+High: 2 
+Low:
+Switch id: 129 Time: 2100003
+High: 
+Low:
+Switch id: 128 Time: 2101001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2101002
+High: 
+Low:
+Switch id: 142 Time: 2101002
+High: 
+Low:2 
+Switch id: 137 Time: 2101002
+High: 
+Low:
+Switch id: 139 Time: 2101002
+High: 
+Low:
+Switch id: 138 Time: 2101002
+High: 
+Low:
+Switch id: 136 Time: 2101002
+High: 2 
+Low:
+Switch id: 140 Time: 2101002
+High: 2 
+Low:
+Switch id: 141 Time: 2101002
+High: 2 
+Low:
+Switch id: 129 Time: 2101003
+High: 
+Low:
+Switch id: 128 Time: 2102001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2102002
+High: 
+Low:
+Switch id: 142 Time: 2102002
+High: 
+Low:2 
+Switch id: 137 Time: 2102002
+High: 
+Low:
+Switch id: 139 Time: 2102002
+High: 
+Low:
+Switch id: 138 Time: 2102002
+High: 
+Low:
+Switch id: 136 Time: 2102002
+High: 2 
+Low:
+Switch id: 140 Time: 2102002
+High: 2 
+Low:
+Switch id: 141 Time: 2102002
+High: 2 
+Low:
+Switch id: 129 Time: 2102003
+High: 
+Low:
+Switch id: 128 Time: 2103001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2103002
+High: 
+Low:
+Switch id: 142 Time: 2103002
+High: 
+Low:2 
+Switch id: 137 Time: 2103002
+High: 
+Low:
+Switch id: 139 Time: 2103002
+High: 
+Low:
+Switch id: 138 Time: 2103002
+High: 
+Low:
+Switch id: 136 Time: 2103002
+High: 2 
+Low:
+Switch id: 140 Time: 2103002
+High: 2 
+Low:
+Switch id: 141 Time: 2103002
+High: 2 
+Low:
+Switch id: 129 Time: 2103003
+High: 
+Low:
+Switch id: 128 Time: 2104001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2104002
+High: 
+Low:
+Switch id: 142 Time: 2104002
+High: 
+Low:2 
+Switch id: 137 Time: 2104002
+High: 
+Low:
+Switch id: 139 Time: 2104002
+High: 
+Low:
+Switch id: 138 Time: 2104002
+High: 
+Low:
+Switch id: 136 Time: 2104002
+High: 2 
+Low:
+Switch id: 140 Time: 2104002
+High: 2 
+Low:
+Switch id: 141 Time: 2104002
+High: 2 
+Low:
+Switch id: 129 Time: 2104003
+High: 
+Low:
+Switch id: 128 Time: 2105001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2105002
+High: 
+Low:
+Switch id: 142 Time: 2105002
+High: 
+Low:2 
+Switch id: 137 Time: 2105002
+High: 
+Low:
+Switch id: 139 Time: 2105002
+High: 
+Low:
+Switch id: 138 Time: 2105002
+High: 
+Low:
+Switch id: 136 Time: 2105002
+High: 2 
+Low:
+Switch id: 140 Time: 2105002
+High: 2 
+Low:
+Switch id: 141 Time: 2105002
+High: 2 
+Low:
+Switch id: 129 Time: 2105003
+High: 
+Low:
+Switch id: 128 Time: 2106001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2106002
+High: 
+Low:
+Switch id: 142 Time: 2106002
+High: 
+Low:2 
+Switch id: 137 Time: 2106002
+High: 
+Low:
+Switch id: 139 Time: 2106002
+High: 
+Low:
+Switch id: 138 Time: 2106002
+High: 
+Low:
+Switch id: 136 Time: 2106002
+High: 2 
+Low:
+Switch id: 140 Time: 2106002
+High: 2 
+Low:
+Switch id: 141 Time: 2106002
+High: 2 
+Low:
+Switch id: 129 Time: 2106003
+High: 
+Low:
+Switch id: 128 Time: 2107001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2107002
+High: 
+Low:
+Switch id: 142 Time: 2107002
+High: 
+Low:2 
+Switch id: 137 Time: 2107002
+High: 
+Low:
+Switch id: 139 Time: 2107002
+High: 
+Low:
+Switch id: 138 Time: 2107002
+High: 
+Low:
+Switch id: 136 Time: 2107002
+High: 2 
+Low:
+Switch id: 140 Time: 2107002
+High: 2 
+Low:
+Switch id: 141 Time: 2107002
+High: 2 
+Low:
+Switch id: 129 Time: 2107003
+High: 
+Low:
+Switch id: 128 Time: 2108001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2108002
+High: 
+Low:
+Switch id: 142 Time: 2108002
+High: 
+Low:2 
+Switch id: 137 Time: 2108002
+High: 
+Low:
+Switch id: 139 Time: 2108002
+High: 
+Low:
+Switch id: 138 Time: 2108002
+High: 
+Low:
+Switch id: 136 Time: 2108002
+High: 2 
+Low:
+Switch id: 140 Time: 2108002
+High: 2 
+Low:
+Switch id: 141 Time: 2108002
+High: 2 
+Low:
+Switch id: 129 Time: 2108003
+High: 
+Low:
+Switch id: 128 Time: 2109001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2109002
+High: 
+Low:
+Switch id: 142 Time: 2109002
+High: 
+Low:2 
+Switch id: 137 Time: 2109002
+High: 
+Low:
+Switch id: 139 Time: 2109002
+High: 
+Low:
+Switch id: 138 Time: 2109002
+High: 
+Low:
+Switch id: 136 Time: 2109002
+High: 2 
+Low:
+Switch id: 140 Time: 2109002
+High: 2 
+Low:
+Switch id: 141 Time: 2109002
+High: 2 
+Low:
+Switch id: 129 Time: 2109003
+High: 
+Low:
+Switch id: 128 Time: 2110001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2110002
+High: 
+Low:
+Switch id: 142 Time: 2110002
+High: 
+Low:2 
+Switch id: 137 Time: 2110002
+High: 
+Low:
+Switch id: 139 Time: 2110002
+High: 
+Low:
+Switch id: 138 Time: 2110002
+High: 
+Low:
+Switch id: 136 Time: 2110002
+High: 2 
+Low:
+Switch id: 140 Time: 2110002
+High: 2 
+Low:
+Switch id: 141 Time: 2110002
+High: 2 
+Low:
+Switch id: 129 Time: 2110003
+High: 
+Low:
+Switch id: 128 Time: 2111001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2111002
+High: 
+Low:
+Switch id: 142 Time: 2111002
+High: 
+Low:2 
+Switch id: 137 Time: 2111002
+High: 
+Low:
+Switch id: 139 Time: 2111002
+High: 
+Low:
+Switch id: 138 Time: 2111002
+High: 
+Low:
+Switch id: 136 Time: 2111002
+High: 2 
+Low:
+Switch id: 140 Time: 2111002
+High: 2 
+Low:
+Switch id: 141 Time: 2111002
+High: 2 
+Low:
+Switch id: 129 Time: 2111003
+High: 
+Low:
+Switch id: 128 Time: 2112001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2112002
+High: 
+Low:
+Switch id: 142 Time: 2112002
+High: 
+Low:2 
+Switch id: 137 Time: 2112002
+High: 
+Low:
+Switch id: 139 Time: 2112002
+High: 
+Low:
+Switch id: 138 Time: 2112002
+High: 
+Low:
+Switch id: 136 Time: 2112002
+High: 2 
+Low:
+Switch id: 140 Time: 2112002
+High: 2 
+Low:
+Switch id: 141 Time: 2112002
+High: 2 
+Low:
+Switch id: 129 Time: 2112003
+High: 
+Low:
+Switch id: 128 Time: 2113001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2113002
+High: 
+Low:
+Switch id: 142 Time: 2113002
+High: 
+Low:2 
+Switch id: 137 Time: 2113002
+High: 
+Low:
+Switch id: 139 Time: 2113002
+High: 
+Low:
+Switch id: 138 Time: 2113002
+High: 
+Low:
+Switch id: 136 Time: 2113002
+High: 2 
+Low:
+Switch id: 140 Time: 2113002
+High: 2 
+Low:
+Switch id: 141 Time: 2113002
+High: 2 
+Low:
+Switch id: 129 Time: 2113003
+High: 
+Low:
+Switch id: 128 Time: 2114001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2114002
+High: 
+Low:
+Switch id: 142 Time: 2114002
+High: 
+Low:2 
+Switch id: 137 Time: 2114002
+High: 
+Low:
+Switch id: 139 Time: 2114002
+High: 
+Low:
+Switch id: 138 Time: 2114002
+High: 
+Low:
+Switch id: 136 Time: 2114002
+High: 2 
+Low:
+Switch id: 140 Time: 2114002
+High: 2 
+Low:
+Switch id: 141 Time: 2114002
+High: 2 
+Low:
+Switch id: 129 Time: 2114003
+High: 
+Low:
+Switch id: 128 Time: 2115001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2115002
+High: 
+Low:
+Switch id: 142 Time: 2115002
+High: 
+Low:2 
+Switch id: 137 Time: 2115002
+High: 
+Low:
+Switch id: 139 Time: 2115002
+High: 
+Low:
+Switch id: 138 Time: 2115002
+High: 
+Low:
+Switch id: 136 Time: 2115002
+High: 2 
+Low:
+Switch id: 140 Time: 2115002
+High: 2 
+Low:
+Switch id: 141 Time: 2115002
+High: 2 
+Low:
+Switch id: 129 Time: 2115003
+High: 
+Low:
+Switch id: 128 Time: 2116001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2116002
+High: 
+Low:
+Switch id: 142 Time: 2116002
+High: 
+Low:2 
+Switch id: 137 Time: 2116002
+High: 
+Low:
+Switch id: 139 Time: 2116002
+High: 
+Low:
+Switch id: 138 Time: 2116002
+High: 
+Low:
+Switch id: 136 Time: 2116002
+High: 2 
+Low:
+Switch id: 140 Time: 2116002
+High: 2 
+Low:
+Switch id: 141 Time: 2116002
+High: 2 
+Low:
+Switch id: 129 Time: 2116003
+High: 
+Low:
+Switch id: 128 Time: 2117001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2117002
+High: 
+Low:
+Switch id: 142 Time: 2117002
+High: 
+Low:2 
+Switch id: 137 Time: 2117002
+High: 
+Low:
+Switch id: 139 Time: 2117002
+High: 
+Low:
+Switch id: 138 Time: 2117002
+High: 
+Low:
+Switch id: 136 Time: 2117002
+High: 2 
+Low:
+Switch id: 140 Time: 2117002
+High: 2 
+Low:
+Switch id: 141 Time: 2117002
+High: 2 
+Low:
+Switch id: 129 Time: 2117003
+High: 
+Low:
+Switch id: 128 Time: 2118001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2118002
+High: 
+Low:
+Switch id: 142 Time: 2118002
+High: 
+Low:2 
+Switch id: 137 Time: 2118002
+High: 
+Low:
+Switch id: 139 Time: 2118002
+High: 
+Low:
+Switch id: 138 Time: 2118002
+High: 
+Low:
+Switch id: 136 Time: 2118002
+High: 2 
+Low:
+Switch id: 140 Time: 2118002
+High: 2 
+Low:
+Switch id: 141 Time: 2118002
+High: 2 
+Low:
+Switch id: 129 Time: 2118003
+High: 
+Low:
+Switch id: 128 Time: 2119001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2119002
+High: 
+Low:
+Switch id: 142 Time: 2119002
+High: 
+Low:2 
+Switch id: 137 Time: 2119002
+High: 
+Low:
+Switch id: 139 Time: 2119002
+High: 
+Low:
+Switch id: 138 Time: 2119002
+High: 
+Low:
+Switch id: 136 Time: 2119002
+High: 2 
+Low:
+Switch id: 140 Time: 2119002
+High: 2 
+Low:
+Switch id: 141 Time: 2119002
+High: 2 
+Low:
+Switch id: 129 Time: 2119003
+High: 
+Low:
+Switch id: 128 Time: 2120001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2120002
+High: 
+Low:
+Switch id: 142 Time: 2120002
+High: 
+Low:2 
+Switch id: 137 Time: 2120002
+High: 
+Low:
+Switch id: 139 Time: 2120002
+High: 
+Low:
+Switch id: 138 Time: 2120002
+High: 
+Low:
+Switch id: 136 Time: 2120002
+High: 2 
+Low:
+Switch id: 140 Time: 2120002
+High: 2 
+Low:
+Switch id: 141 Time: 2120002
+High: 2 
+Low:
+Switch id: 129 Time: 2120003
+High: 
+Low:
+Switch id: 128 Time: 2121001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2121002
+High: 
+Low:
+Switch id: 142 Time: 2121002
+High: 
+Low:2 
+Switch id: 137 Time: 2121002
+High: 
+Low:
+Switch id: 139 Time: 2121002
+High: 
+Low:
+Switch id: 138 Time: 2121002
+High: 
+Low:
+Switch id: 136 Time: 2121002
+High: 2 
+Low:
+Switch id: 140 Time: 2121002
+High: 2 
+Low:
+Switch id: 141 Time: 2121002
+High: 2 
+Low:
+Switch id: 129 Time: 2121003
+High: 
+Low:
+Switch id: 128 Time: 2122001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2122002
+High: 
+Low:
+Switch id: 142 Time: 2122002
+High: 
+Low:2 
+Switch id: 137 Time: 2122002
+High: 
+Low:
+Switch id: 139 Time: 2122002
+High: 
+Low:
+Switch id: 138 Time: 2122002
+High: 
+Low:
+Switch id: 136 Time: 2122002
+High: 2 
+Low:
+Switch id: 140 Time: 2122002
+High: 2 
+Low:
+Switch id: 141 Time: 2122002
+High: 2 
+Low:
+Switch id: 129 Time: 2122003
+High: 
+Low:
+Switch id: 128 Time: 2123001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2123002
+High: 
+Low:
+Switch id: 142 Time: 2123002
+High: 
+Low:2 
+Switch id: 137 Time: 2123002
+High: 
+Low:
+Switch id: 139 Time: 2123002
+High: 
+Low:
+Switch id: 138 Time: 2123002
+High: 
+Low:
+Switch id: 136 Time: 2123002
+High: 2 
+Low:
+Switch id: 140 Time: 2123002
+High: 2 
+Low:
+Switch id: 141 Time: 2123002
+High: 2 
+Low:
+Switch id: 129 Time: 2123003
+High: 
+Low:
+Switch id: 128 Time: 2124001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2124002
+High: 
+Low:
+Switch id: 142 Time: 2124002
+High: 
+Low:2 
+Switch id: 137 Time: 2124002
+High: 
+Low:
+Switch id: 139 Time: 2124002
+High: 
+Low:
+Switch id: 138 Time: 2124002
+High: 
+Low:
+Switch id: 136 Time: 2124002
+High: 2 
+Low:
+Switch id: 140 Time: 2124002
+High: 2 
+Low:
+Switch id: 141 Time: 2124002
+High: 2 
+Low:
+Switch id: 129 Time: 2124003
+High: 
+Low:
+Switch id: 128 Time: 2125001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2125002
+High: 
+Low:
+Switch id: 142 Time: 2125002
+High: 
+Low:2 
+Switch id: 137 Time: 2125002
+High: 
+Low:
+Switch id: 139 Time: 2125002
+High: 
+Low:
+Switch id: 138 Time: 2125002
+High: 
+Low:
+Switch id: 136 Time: 2125002
+High: 2 
+Low:
+Switch id: 140 Time: 2125002
+High: 2 
+Low:
+Switch id: 141 Time: 2125002
+High: 2 
+Low:
+Switch id: 129 Time: 2125003
+High: 
+Low:
+Switch id: 128 Time: 2126001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2126002
+High: 
+Low:
+Switch id: 142 Time: 2126002
+High: 
+Low:2 
+Switch id: 137 Time: 2126002
+High: 
+Low:
+Switch id: 139 Time: 2126002
+High: 
+Low:
+Switch id: 138 Time: 2126002
+High: 
+Low:
+Switch id: 136 Time: 2126002
+High: 2 
+Low:
+Switch id: 140 Time: 2126002
+High: 2 
+Low:
+Switch id: 141 Time: 2126002
+High: 2 
+Low:
+Switch id: 129 Time: 2126003
+High: 
+Low:
+Switch id: 128 Time: 2127001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2127002
+High: 
+Low:
+Switch id: 142 Time: 2127002
+High: 
+Low:2 
+Switch id: 137 Time: 2127002
+High: 
+Low:
+Switch id: 139 Time: 2127002
+High: 
+Low:
+Switch id: 138 Time: 2127002
+High: 
+Low:
+Switch id: 136 Time: 2127002
+High: 2 
+Low:
+Switch id: 140 Time: 2127002
+High: 2 
+Low:
+Switch id: 141 Time: 2127002
+High: 2 
+Low:
+Switch id: 129 Time: 2127003
+High: 
+Low:
+Switch id: 128 Time: 2128001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2128002
+High: 
+Low:
+Switch id: 142 Time: 2128002
+High: 
+Low:2 
+Switch id: 137 Time: 2128002
+High: 
+Low:
+Switch id: 139 Time: 2128002
+High: 
+Low:
+Switch id: 138 Time: 2128002
+High: 
+Low:
+Switch id: 136 Time: 2128002
+High: 2 
+Low:
+Switch id: 140 Time: 2128002
+High: 2 
+Low:
+Switch id: 141 Time: 2128002
+High: 2 
+Low:
+Switch id: 129 Time: 2128003
+High: 
+Low:
+Switch id: 128 Time: 2129001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2129002
+High: 
+Low:
+Switch id: 142 Time: 2129002
+High: 
+Low:2 
+Switch id: 137 Time: 2129002
+High: 
+Low:
+Switch id: 139 Time: 2129002
+High: 
+Low:
+Switch id: 138 Time: 2129002
+High: 
+Low:
+Switch id: 136 Time: 2129002
+High: 2 
+Low:
+Switch id: 140 Time: 2129002
+High: 2 
+Low:
+Switch id: 141 Time: 2129002
+High: 2 
+Low:
+Switch id: 129 Time: 2129003
+High: 
+Low:
+Switch id: 128 Time: 2130001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2130002
+High: 
+Low:
+Switch id: 142 Time: 2130002
+High: 
+Low:2 
+Switch id: 137 Time: 2130002
+High: 
+Low:
+Switch id: 139 Time: 2130002
+High: 
+Low:
+Switch id: 138 Time: 2130002
+High: 
+Low:
+Switch id: 136 Time: 2130002
+High: 2 
+Low:
+Switch id: 140 Time: 2130002
+High: 2 
+Low:
+Switch id: 141 Time: 2130002
+High: 2 
+Low:
+Switch id: 129 Time: 2130003
+High: 
+Low:
+Switch id: 128 Time: 2131001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2131002
+High: 
+Low:
+Switch id: 142 Time: 2131002
+High: 
+Low:2 
+Switch id: 137 Time: 2131002
+High: 
+Low:
+Switch id: 139 Time: 2131002
+High: 
+Low:
+Switch id: 138 Time: 2131002
+High: 
+Low:
+Switch id: 136 Time: 2131002
+High: 2 
+Low:
+Switch id: 140 Time: 2131002
+High: 2 
+Low:
+Switch id: 141 Time: 2131002
+High: 2 
+Low:
+Switch id: 129 Time: 2131003
+High: 
+Low:
+Switch id: 128 Time: 2132001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2132002
+High: 
+Low:
+Switch id: 142 Time: 2132002
+High: 
+Low:2 
+Switch id: 137 Time: 2132002
+High: 
+Low:
+Switch id: 139 Time: 2132002
+High: 
+Low:
+Switch id: 138 Time: 2132002
+High: 
+Low:
+Switch id: 136 Time: 2132002
+High: 2 
+Low:
+Switch id: 140 Time: 2132002
+High: 2 
+Low:
+Switch id: 141 Time: 2132002
+High: 2 
+Low:
+Switch id: 129 Time: 2132003
+High: 
+Low:
+Switch id: 128 Time: 2133001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2133002
+High: 
+Low:
+Switch id: 142 Time: 2133002
+High: 
+Low:2 
+Switch id: 137 Time: 2133002
+High: 
+Low:
+Switch id: 139 Time: 2133002
+High: 
+Low:
+Switch id: 138 Time: 2133002
+High: 
+Low:
+Switch id: 136 Time: 2133002
+High: 2 
+Low:
+Switch id: 140 Time: 2133002
+High: 2 
+Low:
+Switch id: 141 Time: 2133002
+High: 2 
+Low:
+Switch id: 129 Time: 2133003
+High: 
+Low:
+Switch id: 128 Time: 2134001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2134002
+High: 
+Low:
+Switch id: 142 Time: 2134002
+High: 
+Low:2 
+Switch id: 137 Time: 2134002
+High: 
+Low:
+Switch id: 139 Time: 2134002
+High: 
+Low:
+Switch id: 138 Time: 2134002
+High: 
+Low:
+Switch id: 136 Time: 2134002
+High: 2 
+Low:
+Switch id: 140 Time: 2134002
+High: 2 
+Low:
+Switch id: 141 Time: 2134002
+High: 2 
+Low:
+Switch id: 129 Time: 2134003
+High: 
+Low:
+Switch id: 128 Time: 2135001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2135002
+High: 
+Low:
+Switch id: 142 Time: 2135002
+High: 
+Low:2 
+Switch id: 137 Time: 2135002
+High: 
+Low:
+Switch id: 139 Time: 2135002
+High: 
+Low:
+Switch id: 138 Time: 2135002
+High: 
+Low:
+Switch id: 136 Time: 2135002
+High: 2 
+Low:
+Switch id: 140 Time: 2135002
+High: 2 
+Low:
+Switch id: 141 Time: 2135002
+High: 2 
+Low:
+Switch id: 129 Time: 2135003
+High: 
+Low:
+Switch id: 128 Time: 2136001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2136002
+High: 
+Low:
+Switch id: 142 Time: 2136002
+High: 
+Low:2 
+Switch id: 137 Time: 2136002
+High: 
+Low:
+Switch id: 139 Time: 2136002
+High: 
+Low:
+Switch id: 138 Time: 2136002
+High: 
+Low:
+Switch id: 136 Time: 2136002
+High: 2 
+Low:
+Switch id: 140 Time: 2136002
+High: 2 
+Low:
+Switch id: 141 Time: 2136002
+High: 2 
+Low:
+Switch id: 129 Time: 2136003
+High: 
+Low:
+Switch id: 128 Time: 2137001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2137002
+High: 
+Low:
+Switch id: 142 Time: 2137002
+High: 
+Low:2 
+Switch id: 137 Time: 2137002
+High: 
+Low:
+Switch id: 139 Time: 2137002
+High: 
+Low:
+Switch id: 138 Time: 2137002
+High: 
+Low:
+Switch id: 136 Time: 2137002
+High: 2 
+Low:
+Switch id: 140 Time: 2137002
+High: 2 
+Low:
+Switch id: 141 Time: 2137002
+High: 2 
+Low:
+Switch id: 129 Time: 2137003
+High: 
+Low:
+Switch id: 128 Time: 2138001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2138002
+High: 
+Low:
+Switch id: 142 Time: 2138002
+High: 
+Low:2 
+Switch id: 137 Time: 2138002
+High: 
+Low:
+Switch id: 139 Time: 2138002
+High: 
+Low:
+Switch id: 138 Time: 2138002
+High: 
+Low:
+Switch id: 136 Time: 2138002
+High: 2 
+Low:
+Switch id: 140 Time: 2138002
+High: 2 
+Low:
+Switch id: 141 Time: 2138002
+High: 2 
+Low:
+Switch id: 129 Time: 2138003
+High: 
+Low:
+Switch id: 128 Time: 2139001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2139002
+High: 
+Low:
+Switch id: 142 Time: 2139002
+High: 
+Low:2 
+Switch id: 137 Time: 2139002
+High: 
+Low:
+Switch id: 139 Time: 2139002
+High: 
+Low:
+Switch id: 138 Time: 2139002
+High: 
+Low:
+Switch id: 136 Time: 2139002
+High: 2 
+Low:
+Switch id: 140 Time: 2139002
+High: 2 
+Low:
+Switch id: 141 Time: 2139002
+High: 2 
+Low:
+Switch id: 129 Time: 2139003
+High: 
+Low:
+Switch id: 128 Time: 2140001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2140002
+High: 
+Low:
+Switch id: 142 Time: 2140002
+High: 
+Low:2 
+Switch id: 137 Time: 2140002
+High: 
+Low:
+Switch id: 139 Time: 2140002
+High: 
+Low:
+Switch id: 138 Time: 2140002
+High: 
+Low:
+Switch id: 136 Time: 2140002
+High: 2 
+Low:
+Switch id: 140 Time: 2140002
+High: 2 
+Low:
+Switch id: 141 Time: 2140002
+High: 2 
+Low:
+Switch id: 129 Time: 2140003
+High: 
+Low:
+Switch id: 128 Time: 2141001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2141002
+High: 
+Low:
+Switch id: 142 Time: 2141002
+High: 
+Low:2 
+Switch id: 137 Time: 2141002
+High: 
+Low:
+Switch id: 139 Time: 2141002
+High: 
+Low:
+Switch id: 138 Time: 2141002
+High: 
+Low:
+Switch id: 136 Time: 2141002
+High: 2 
+Low:
+Switch id: 140 Time: 2141002
+High: 2 
+Low:
+Switch id: 141 Time: 2141002
+High: 2 
+Low:
+Switch id: 129 Time: 2141003
+High: 
+Low:
+Switch id: 128 Time: 2142001
+High: 17 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2142002
+High: 
+Low:
+Switch id: 142 Time: 2142002
+High: 
+Low:2 
+Switch id: 137 Time: 2142002
+High: 
+Low:
+Switch id: 139 Time: 2142002
+High: 
+Low:
+Switch id: 138 Time: 2142002
+High: 
+Low:
+Switch id: 136 Time: 2142002
+High: 2 
+Low:
+Switch id: 140 Time: 2142002
+High: 2 
+Low:
+Switch id: 141 Time: 2142002
+High: 2 
+Low:
+Switch id: 129 Time: 2142003
+High: 
+Low:
+Switch id: 128 Time: 2143001
+High: 17 18 21 22 
+Low:23 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 18
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Reunion reroute time: 2143001 old port:18 new port: 23 Switch id: 128 reoute time: 0
+Switch id: 143 Time: 2143002
+High: 
+Low:
+Switch id: 142 Time: 2143002
+High: 
+Low:2 
+Switch id: 137 Time: 2143002
+High: 2 
+Low:
+Switch id: 139 Time: 2143002
+High: 
+Low:
+Switch id: 138 Time: 2143002
+High: 
+Low:
+Switch id: 136 Time: 2143002
+High: 2 
+Low:
+Switch id: 140 Time: 2143002
+High: 2 
+Low:
+Switch id: 141 Time: 2143002
+High: 2 
+Low:
+Switch id: 129 Time: 2143003
+High: 
+Low:
+Switch id: 128 Time: 2144001
+High: 17 21 22 23 
+Low:18 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2144002
+High: 
+Low:
+Switch id: 142 Time: 2144002
+High: 2 
+Low:
+Switch id: 137 Time: 2144002
+High: 
+Low:2 
+Switch id: 139 Time: 2144002
+High: 
+Low:
+Switch id: 138 Time: 2144002
+High: 
+Low:
+Switch id: 136 Time: 2144002
+High: 2 
+Low:
+Switch id: 140 Time: 2144002
+High: 2 
+Low:
+Switch id: 141 Time: 2144002
+High: 2 
+Low:
+Switch id: 129 Time: 2144003
+High: 
+Low:
+Switch id: 128 Time: 2145001
+High: 17 19 21 22 23 
+Low:18 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2145002
+High: 
+Low:
+Switch id: 142 Time: 2145002
+High: 2 
+Low:
+Switch id: 137 Time: 2145002
+High: 
+Low:2 
+Switch id: 139 Time: 2145002
+High: 
+Low:
+Switch id: 138 Time: 2145002
+High: 2 
+Low:
+Switch id: 136 Time: 2145002
+High: 2 
+Low:
+Switch id: 140 Time: 2145002
+High: 2 
+Low:
+Switch id: 141 Time: 2145002
+High: 2 
+Low:
+Switch id: 129 Time: 2145003
+High: 
+Low:
+Switch id: 128 Time: 2146001
+High: 17 19 21 22 23 24 
+Low:18 530 531 532 535 536 
+Key: 792659927646601319, Value: 24
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Reunion reroute time: 2146001 old port:24 new port: 18 Switch id: 128 reoute time: 0
+Switch id: 143 Time: 2146002
+High: 2 
+Low:
+Switch id: 142 Time: 2146002
+High: 2 
+Low:
+Switch id: 137 Time: 2146002
+High: 
+Low:2 
+Switch id: 139 Time: 2146002
+High: 
+Low:
+Switch id: 138 Time: 2146002
+High: 2 
+Low:
+Switch id: 136 Time: 2146002
+High: 2 
+Low:
+Switch id: 140 Time: 2146002
+High: 2 
+Low:
+Switch id: 141 Time: 2146002
+High: 2 
+Low:
+Switch id: 129 Time: 2146003
+High: 
+Low:
+Switch id: 128 Time: 2147001
+High: 17 18 19 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2147002
+High: 
+Low:2 
+Switch id: 142 Time: 2147002
+High: 2 
+Low:
+Switch id: 137 Time: 2147002
+High: 2 
+Low:
+Switch id: 139 Time: 2147002
+High: 
+Low:
+Switch id: 138 Time: 2147002
+High: 2 
+Low:
+Switch id: 136 Time: 2147002
+High: 2 
+Low:
+Switch id: 140 Time: 2147002
+High: 2 
+Low:
+Switch id: 141 Time: 2147002
+High: 2 
+Low:
+Switch id: 129 Time: 2147003
+High: 
+Low:
+Switch id: 128 Time: 2148001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2148002
+High: 
+Low:2 
+Switch id: 142 Time: 2148002
+High: 2 
+Low:
+Switch id: 137 Time: 2148002
+High: 2 
+Low:
+Switch id: 139 Time: 2148002
+High: 2 
+Low:
+Switch id: 138 Time: 2148002
+High: 2 
+Low:
+Switch id: 136 Time: 2148002
+High: 2 
+Low:
+Switch id: 140 Time: 2148002
+High: 2 
+Low:
+Switch id: 141 Time: 2148002
+High: 2 
+Low:
+Switch id: 129 Time: 2148003
+High: 
+Low:
+Switch id: 128 Time: 2149001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2149002
+High: 
+Low:2 
+Switch id: 142 Time: 2149002
+High: 2 
+Low:
+Switch id: 137 Time: 2149002
+High: 2 
+Low:
+Switch id: 139 Time: 2149002
+High: 2 
+Low:
+Switch id: 138 Time: 2149002
+High: 2 
+Low:
+Switch id: 136 Time: 2149002
+High: 2 
+Low:
+Switch id: 140 Time: 2149002
+High: 2 
+Low:
+Switch id: 141 Time: 2149002
+High: 2 
+Low:
+Switch id: 129 Time: 2149003
+High: 
+Low:
+Switch id: 128 Time: 2150001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2150002
+High: 
+Low:2 
+Switch id: 142 Time: 2150002
+High: 2 
+Low:
+Switch id: 137 Time: 2150002
+High: 2 
+Low:
+Switch id: 139 Time: 2150002
+High: 2 
+Low:
+Switch id: 138 Time: 2150002
+High: 2 
+Low:
+Switch id: 136 Time: 2150002
+High: 2 
+Low:
+Switch id: 140 Time: 2150002
+High: 2 
+Low:
+Switch id: 141 Time: 2150002
+High: 2 
+Low:
+Switch id: 129 Time: 2150003
+High: 
+Low:
+Switch id: 128 Time: 2151001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2151002
+High: 
+Low:2 
+Switch id: 142 Time: 2151002
+High: 2 
+Low:
+Switch id: 137 Time: 2151002
+High: 2 
+Low:
+Switch id: 139 Time: 2151002
+High: 2 
+Low:
+Switch id: 138 Time: 2151002
+High: 2 
+Low:
+Switch id: 136 Time: 2151002
+High: 2 
+Low:
+Switch id: 140 Time: 2151002
+High: 2 
+Low:
+Switch id: 141 Time: 2151002
+High: 2 
+Low:
+Switch id: 129 Time: 2151003
+High: 
+Low:
+Switch id: 128 Time: 2152001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2152002
+High: 
+Low:2 
+Switch id: 142 Time: 2152002
+High: 2 
+Low:
+Switch id: 137 Time: 2152002
+High: 2 
+Low:
+Switch id: 139 Time: 2152002
+High: 2 
+Low:
+Switch id: 138 Time: 2152002
+High: 2 
+Low:
+Switch id: 136 Time: 2152002
+High: 2 
+Low:
+Switch id: 140 Time: 2152002
+High: 2 
+Low:
+Switch id: 141 Time: 2152002
+High: 2 
+Low:
+Switch id: 129 Time: 2152003
+High: 
+Low:
+Switch id: 128 Time: 2153001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2153002
+High: 
+Low:2 
+Switch id: 142 Time: 2153002
+High: 2 
+Low:
+Switch id: 137 Time: 2153002
+High: 2 
+Low:
+Switch id: 139 Time: 2153002
+High: 2 
+Low:
+Switch id: 138 Time: 2153002
+High: 2 
+Low:
+Switch id: 136 Time: 2153002
+High: 2 
+Low:
+Switch id: 140 Time: 2153002
+High: 2 
+Low:
+Switch id: 141 Time: 2153002
+High: 2 
+Low:
+Switch id: 129 Time: 2153003
+High: 
+Low:
+Switch id: 128 Time: 2154001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2154002
+High: 
+Low:2 
+Switch id: 142 Time: 2154002
+High: 2 
+Low:
+Switch id: 137 Time: 2154002
+High: 2 
+Low:
+Switch id: 139 Time: 2154002
+High: 2 
+Low:
+Switch id: 138 Time: 2154002
+High: 2 
+Low:
+Switch id: 136 Time: 2154002
+High: 2 
+Low:
+Switch id: 140 Time: 2154002
+High: 2 
+Low:
+Switch id: 141 Time: 2154002
+High: 2 
+Low:
+Switch id: 129 Time: 2154003
+High: 
+Low:
+Switch id: 128 Time: 2155001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2155002
+High: 
+Low:2 
+Switch id: 142 Time: 2155002
+High: 2 
+Low:
+Switch id: 137 Time: 2155002
+High: 2 
+Low:
+Switch id: 139 Time: 2155002
+High: 2 
+Low:
+Switch id: 138 Time: 2155002
+High: 2 
+Low:
+Switch id: 136 Time: 2155002
+High: 2 
+Low:
+Switch id: 140 Time: 2155002
+High: 2 
+Low:
+Switch id: 141 Time: 2155002
+High: 2 
+Low:
+Switch id: 129 Time: 2155003
+High: 
+Low:
+Switch id: 128 Time: 2156001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2156002
+High: 
+Low:2 
+Switch id: 142 Time: 2156002
+High: 2 
+Low:
+Switch id: 137 Time: 2156002
+High: 2 
+Low:
+Switch id: 139 Time: 2156002
+High: 2 
+Low:
+Switch id: 138 Time: 2156002
+High: 2 
+Low:
+Switch id: 136 Time: 2156002
+High: 2 
+Low:
+Switch id: 140 Time: 2156002
+High: 2 
+Low:
+Switch id: 141 Time: 2156002
+High: 2 
+Low:
+Switch id: 129 Time: 2156003
+High: 
+Low:
+Switch id: 128 Time: 2157001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2157002
+High: 
+Low:2 
+Switch id: 142 Time: 2157002
+High: 2 
+Low:
+Switch id: 137 Time: 2157002
+High: 2 
+Low:
+Switch id: 139 Time: 2157002
+High: 2 
+Low:
+Switch id: 138 Time: 2157002
+High: 2 
+Low:
+Switch id: 136 Time: 2157002
+High: 2 
+Low:
+Switch id: 140 Time: 2157002
+High: 2 
+Low:
+Switch id: 141 Time: 2157002
+High: 2 
+Low:
+Switch id: 129 Time: 2157003
+High: 
+Low:
+Switch id: 128 Time: 2158001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2158002
+High: 
+Low:2 
+Switch id: 142 Time: 2158002
+High: 2 
+Low:
+Switch id: 137 Time: 2158002
+High: 2 
+Low:
+Switch id: 139 Time: 2158002
+High: 2 
+Low:
+Switch id: 138 Time: 2158002
+High: 2 
+Low:
+Switch id: 136 Time: 2158002
+High: 2 
+Low:
+Switch id: 140 Time: 2158002
+High: 2 
+Low:
+Switch id: 141 Time: 2158002
+High: 2 
+Low:
+Switch id: 129 Time: 2158003
+High: 
+Low:
+Switch id: 128 Time: 2159001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2159002
+High: 
+Low:2 
+Switch id: 142 Time: 2159002
+High: 2 
+Low:
+Switch id: 137 Time: 2159002
+High: 2 
+Low:
+Switch id: 139 Time: 2159002
+High: 2 
+Low:
+Switch id: 138 Time: 2159002
+High: 2 
+Low:
+Switch id: 136 Time: 2159002
+High: 2 
+Low:
+Switch id: 140 Time: 2159002
+High: 2 
+Low:
+Switch id: 141 Time: 2159002
+High: 2 
+Low:
+Switch id: 129 Time: 2159003
+High: 
+Low:
+Switch id: 128 Time: 2160001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2160002
+High: 
+Low:2 
+Switch id: 142 Time: 2160002
+High: 2 
+Low:
+Switch id: 137 Time: 2160002
+High: 2 
+Low:
+Switch id: 139 Time: 2160002
+High: 2 
+Low:
+Switch id: 138 Time: 2160002
+High: 2 
+Low:
+Switch id: 136 Time: 2160002
+High: 2 
+Low:
+Switch id: 140 Time: 2160002
+High: 2 
+Low:
+Switch id: 141 Time: 2160002
+High: 2 
+Low:
+Switch id: 129 Time: 2160003
+High: 
+Low:
+Switch id: 128 Time: 2161001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2161002
+High: 
+Low:2 
+Switch id: 142 Time: 2161002
+High: 2 
+Low:
+Switch id: 137 Time: 2161002
+High: 2 
+Low:
+Switch id: 139 Time: 2161002
+High: 2 
+Low:
+Switch id: 138 Time: 2161002
+High: 2 
+Low:
+Switch id: 136 Time: 2161002
+High: 2 
+Low:
+Switch id: 140 Time: 2161002
+High: 2 
+Low:
+Switch id: 141 Time: 2161002
+High: 2 
+Low:
+Switch id: 129 Time: 2161003
+High: 
+Low:
+Switch id: 128 Time: 2162001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2162002
+High: 
+Low:2 
+Switch id: 142 Time: 2162002
+High: 2 
+Low:
+Switch id: 137 Time: 2162002
+High: 2 
+Low:
+Switch id: 139 Time: 2162002
+High: 2 
+Low:
+Switch id: 138 Time: 2162002
+High: 2 
+Low:
+Switch id: 136 Time: 2162002
+High: 2 
+Low:
+Switch id: 140 Time: 2162002
+High: 2 
+Low:
+Switch id: 141 Time: 2162002
+High: 2 
+Low:
+Switch id: 129 Time: 2162003
+High: 
+Low:
+Switch id: 128 Time: 2163001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2163002
+High: 
+Low:2 
+Switch id: 142 Time: 2163002
+High: 2 
+Low:
+Switch id: 137 Time: 2163002
+High: 2 
+Low:
+Switch id: 139 Time: 2163002
+High: 2 
+Low:
+Switch id: 138 Time: 2163002
+High: 2 
+Low:
+Switch id: 136 Time: 2163002
+High: 2 
+Low:
+Switch id: 140 Time: 2163002
+High: 2 
+Low:
+Switch id: 141 Time: 2163002
+High: 2 
+Low:
+Switch id: 129 Time: 2163003
+High: 
+Low:
+Switch id: 128 Time: 2164001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2164002
+High: 
+Low:2 
+Switch id: 142 Time: 2164002
+High: 2 
+Low:
+Switch id: 137 Time: 2164002
+High: 2 
+Low:
+Switch id: 139 Time: 2164002
+High: 2 
+Low:
+Switch id: 138 Time: 2164002
+High: 2 
+Low:
+Switch id: 136 Time: 2164002
+High: 2 
+Low:
+Switch id: 140 Time: 2164002
+High: 2 
+Low:
+Switch id: 141 Time: 2164002
+High: 2 
+Low:
+Switch id: 129 Time: 2164003
+High: 
+Low:
+Switch id: 128 Time: 2165001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2165002
+High: 
+Low:2 
+Switch id: 142 Time: 2165002
+High: 2 
+Low:
+Switch id: 137 Time: 2165002
+High: 2 
+Low:
+Switch id: 139 Time: 2165002
+High: 2 
+Low:
+Switch id: 138 Time: 2165002
+High: 2 
+Low:
+Switch id: 136 Time: 2165002
+High: 2 
+Low:
+Switch id: 140 Time: 2165002
+High: 2 
+Low:
+Switch id: 141 Time: 2165002
+High: 2 
+Low:
+Switch id: 129 Time: 2165003
+High: 
+Low:
+Switch id: 128 Time: 2166001
+High: 17 18 19 20 21 22 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2166002
+High: 
+Low:2 
+Switch id: 142 Time: 2166002
+High: 2 
+Low:
+Switch id: 137 Time: 2166002
+High: 2 
+Low:
+Switch id: 139 Time: 2166002
+High: 2 
+Low:
+Switch id: 138 Time: 2166002
+High: 2 
+Low:
+Switch id: 136 Time: 2166002
+High: 2 
+Low:
+Switch id: 140 Time: 2166002
+High: 2 
+Low:
+Switch id: 141 Time: 2166002
+High: 2 
+Low:
+Switch id: 129 Time: 2166003
+High: 
+Low:
+Switch id: 128 Time: 2167001
+High: 18 19 20 23 
+Low:24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792661027158229095, Value: 17
+Key: 792662126669856871, Value: 20
+Key: 792663226181484647, Value: 21
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Key: 792666524716367975, Value: 22
+Switch id: 143 Time: 2167002
+High: 
+Low:2 
+Switch id: 142 Time: 2167002
+High: 2 
+Low:
+Switch id: 137 Time: 2167002
+High: 2 
+Low:
+Switch id: 139 Time: 2167002
+High: 2 
+Low:
+Switch id: 138 Time: 2167002
+High: 2 
+Low:
+Switch id: 136 Time: 2167002
+High: 
+Low:
+Switch id: 140 Time: 2167002
+High: 
+Low:
+Switch id: 141 Time: 2167002
+High: 
+Low:
+Switch id: 129 Time: 2167003
+High: 
+Low:
+Switch id: 128 Time: 2168001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2168002
+High: 
+Low:2 
+Switch id: 142 Time: 2168002
+High: 2 
+Low:
+Switch id: 137 Time: 2168002
+High: 2 
+Low:
+Switch id: 139 Time: 2168002
+High: 2 
+Low:
+Switch id: 138 Time: 2168002
+High: 2 
+Low:
+Switch id: 136 Time: 2168002
+High: 
+Low:2 
+Switch id: 140 Time: 2168002
+High: 
+Low:2 
+Switch id: 141 Time: 2168002
+High: 
+Low:2 
+Switch id: 129 Time: 2168003
+High: 
+Low:
+Switch id: 128 Time: 2169001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2169002
+High: 
+Low:2 
+Switch id: 142 Time: 2169002
+High: 2 
+Low:
+Switch id: 137 Time: 2169002
+High: 2 
+Low:
+Switch id: 139 Time: 2169002
+High: 2 
+Low:
+Switch id: 138 Time: 2169002
+High: 2 
+Low:
+Switch id: 136 Time: 2169002
+High: 
+Low:2 
+Switch id: 140 Time: 2169002
+High: 
+Low:2 
+Switch id: 141 Time: 2169002
+High: 
+Low:2 
+Switch id: 129 Time: 2169003
+High: 
+Low:
+Switch id: 128 Time: 2170001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2170002
+High: 
+Low:2 
+Switch id: 142 Time: 2170002
+High: 2 
+Low:
+Switch id: 137 Time: 2170002
+High: 2 
+Low:
+Switch id: 139 Time: 2170002
+High: 2 
+Low:
+Switch id: 138 Time: 2170002
+High: 2 
+Low:
+Switch id: 136 Time: 2170002
+High: 
+Low:2 
+Switch id: 140 Time: 2170002
+High: 
+Low:2 
+Switch id: 141 Time: 2170002
+High: 
+Low:2 
+Switch id: 129 Time: 2170003
+High: 
+Low:
+Switch id: 128 Time: 2171001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2171002
+High: 
+Low:2 
+Switch id: 142 Time: 2171002
+High: 2 
+Low:
+Switch id: 137 Time: 2171002
+High: 2 
+Low:
+Switch id: 139 Time: 2171002
+High: 2 
+Low:
+Switch id: 138 Time: 2171002
+High: 2 
+Low:
+Switch id: 136 Time: 2171002
+High: 
+Low:2 
+Switch id: 140 Time: 2171002
+High: 
+Low:2 
+Switch id: 141 Time: 2171002
+High: 
+Low:2 
+Switch id: 129 Time: 2171003
+High: 
+Low:
+Switch id: 128 Time: 2172001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2172002
+High: 
+Low:2 
+Switch id: 142 Time: 2172002
+High: 2 
+Low:
+Switch id: 137 Time: 2172002
+High: 2 
+Low:
+Switch id: 139 Time: 2172002
+High: 2 
+Low:
+Switch id: 138 Time: 2172002
+High: 2 
+Low:
+Switch id: 136 Time: 2172002
+High: 
+Low:2 
+Switch id: 140 Time: 2172002
+High: 
+Low:2 
+Switch id: 141 Time: 2172002
+High: 
+Low:2 
+Switch id: 129 Time: 2172003
+High: 
+Low:
+Switch id: 128 Time: 2173001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2173002
+High: 
+Low:2 
+Switch id: 142 Time: 2173002
+High: 2 
+Low:
+Switch id: 137 Time: 2173002
+High: 2 
+Low:
+Switch id: 139 Time: 2173002
+High: 2 
+Low:
+Switch id: 138 Time: 2173002
+High: 2 
+Low:
+Switch id: 136 Time: 2173002
+High: 
+Low:2 
+Switch id: 140 Time: 2173002
+High: 
+Low:2 
+Switch id: 141 Time: 2173002
+High: 
+Low:2 
+Switch id: 129 Time: 2173003
+High: 
+Low:
+Switch id: 128 Time: 2174001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2174002
+High: 
+Low:2 
+Switch id: 142 Time: 2174002
+High: 2 
+Low:
+Switch id: 137 Time: 2174002
+High: 2 
+Low:
+Switch id: 139 Time: 2174002
+High: 2 
+Low:
+Switch id: 138 Time: 2174002
+High: 2 
+Low:
+Switch id: 136 Time: 2174002
+High: 
+Low:2 
+Switch id: 140 Time: 2174002
+High: 
+Low:2 
+Switch id: 141 Time: 2174002
+High: 
+Low:2 
+Switch id: 129 Time: 2174003
+High: 
+Low:
+Switch id: 128 Time: 2175001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2175002
+High: 
+Low:2 
+Switch id: 142 Time: 2175002
+High: 2 
+Low:
+Switch id: 137 Time: 2175002
+High: 2 
+Low:
+Switch id: 139 Time: 2175002
+High: 2 
+Low:
+Switch id: 138 Time: 2175002
+High: 2 
+Low:
+Switch id: 136 Time: 2175002
+High: 
+Low:2 
+Switch id: 140 Time: 2175002
+High: 
+Low:2 
+Switch id: 141 Time: 2175002
+High: 
+Low:2 
+Switch id: 129 Time: 2175003
+High: 
+Low:
+Switch id: 128 Time: 2176001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2176002
+High: 
+Low:2 
+Switch id: 142 Time: 2176002
+High: 2 
+Low:
+Switch id: 137 Time: 2176002
+High: 2 
+Low:
+Switch id: 139 Time: 2176002
+High: 2 
+Low:
+Switch id: 138 Time: 2176002
+High: 2 
+Low:
+Switch id: 136 Time: 2176002
+High: 
+Low:2 
+Switch id: 140 Time: 2176002
+High: 
+Low:2 
+Switch id: 141 Time: 2176002
+High: 
+Low:2 
+Switch id: 129 Time: 2176003
+High: 
+Low:
+Switch id: 128 Time: 2177001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2177002
+High: 
+Low:2 
+Switch id: 142 Time: 2177002
+High: 2 
+Low:
+Switch id: 137 Time: 2177002
+High: 2 
+Low:
+Switch id: 139 Time: 2177002
+High: 2 
+Low:
+Switch id: 138 Time: 2177002
+High: 2 
+Low:
+Switch id: 136 Time: 2177002
+High: 
+Low:2 
+Switch id: 140 Time: 2177002
+High: 
+Low:2 
+Switch id: 141 Time: 2177002
+High: 
+Low:2 
+Switch id: 129 Time: 2177003
+High: 
+Low:
+Switch id: 128 Time: 2178001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2178002
+High: 
+Low:2 
+Switch id: 142 Time: 2178002
+High: 2 
+Low:
+Switch id: 137 Time: 2178002
+High: 2 
+Low:
+Switch id: 139 Time: 2178002
+High: 2 
+Low:
+Switch id: 138 Time: 2178002
+High: 2 
+Low:
+Switch id: 136 Time: 2178002
+High: 
+Low:2 
+Switch id: 140 Time: 2178002
+High: 
+Low:2 
+Switch id: 141 Time: 2178002
+High: 
+Low:2 
+Switch id: 129 Time: 2178003
+High: 
+Low:
+Switch id: 128 Time: 2179001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2179002
+High: 
+Low:2 
+Switch id: 142 Time: 2179002
+High: 2 
+Low:
+Switch id: 137 Time: 2179002
+High: 2 
+Low:
+Switch id: 139 Time: 2179002
+High: 2 
+Low:
+Switch id: 138 Time: 2179002
+High: 2 
+Low:
+Switch id: 136 Time: 2179002
+High: 
+Low:2 
+Switch id: 140 Time: 2179002
+High: 
+Low:2 
+Switch id: 141 Time: 2179002
+High: 
+Low:2 
+Switch id: 129 Time: 2179003
+High: 
+Low:
+Switch id: 128 Time: 2180001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2180002
+High: 
+Low:2 
+Switch id: 142 Time: 2180002
+High: 2 
+Low:
+Switch id: 137 Time: 2180002
+High: 2 
+Low:
+Switch id: 139 Time: 2180002
+High: 2 
+Low:
+Switch id: 138 Time: 2180002
+High: 2 
+Low:
+Switch id: 136 Time: 2180002
+High: 
+Low:2 
+Switch id: 140 Time: 2180002
+High: 
+Low:2 
+Switch id: 141 Time: 2180002
+High: 
+Low:2 
+Switch id: 129 Time: 2180003
+High: 
+Low:
+Switch id: 128 Time: 2181001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2181002
+High: 
+Low:2 
+Switch id: 142 Time: 2181002
+High: 2 
+Low:
+Switch id: 137 Time: 2181002
+High: 2 
+Low:
+Switch id: 139 Time: 2181002
+High: 2 
+Low:
+Switch id: 138 Time: 2181002
+High: 2 
+Low:
+Switch id: 136 Time: 2181002
+High: 
+Low:2 
+Switch id: 140 Time: 2181002
+High: 
+Low:2 
+Switch id: 141 Time: 2181002
+High: 
+Low:2 
+Switch id: 129 Time: 2181003
+High: 
+Low:
+Switch id: 128 Time: 2182001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2182002
+High: 
+Low:2 
+Switch id: 142 Time: 2182002
+High: 2 
+Low:
+Switch id: 137 Time: 2182002
+High: 2 
+Low:
+Switch id: 139 Time: 2182002
+High: 2 
+Low:
+Switch id: 138 Time: 2182002
+High: 2 
+Low:
+Switch id: 136 Time: 2182002
+High: 
+Low:2 
+Switch id: 140 Time: 2182002
+High: 
+Low:2 
+Switch id: 141 Time: 2182002
+High: 
+Low:2 
+Switch id: 129 Time: 2182003
+High: 
+Low:
+Switch id: 128 Time: 2183001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2183002
+High: 
+Low:2 
+Switch id: 142 Time: 2183002
+High: 2 
+Low:
+Switch id: 137 Time: 2183002
+High: 2 
+Low:
+Switch id: 139 Time: 2183002
+High: 2 
+Low:
+Switch id: 138 Time: 2183002
+High: 2 
+Low:
+Switch id: 136 Time: 2183002
+High: 
+Low:2 
+Switch id: 140 Time: 2183002
+High: 
+Low:2 
+Switch id: 141 Time: 2183002
+High: 
+Low:2 
+Switch id: 129 Time: 2183003
+High: 
+Low:
+Switch id: 128 Time: 2184001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2184002
+High: 
+Low:2 
+Switch id: 142 Time: 2184002
+High: 2 
+Low:
+Switch id: 137 Time: 2184002
+High: 2 
+Low:
+Switch id: 139 Time: 2184002
+High: 2 
+Low:
+Switch id: 138 Time: 2184002
+High: 2 
+Low:
+Switch id: 136 Time: 2184002
+High: 
+Low:2 
+Switch id: 140 Time: 2184002
+High: 
+Low:2 
+Switch id: 141 Time: 2184002
+High: 
+Low:2 
+Switch id: 129 Time: 2184003
+High: 
+Low:
+Switch id: 128 Time: 2185001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2185002
+High: 
+Low:2 
+Switch id: 142 Time: 2185002
+High: 2 
+Low:
+Switch id: 137 Time: 2185002
+High: 2 
+Low:
+Switch id: 139 Time: 2185002
+High: 2 
+Low:
+Switch id: 138 Time: 2185002
+High: 2 
+Low:
+Switch id: 136 Time: 2185002
+High: 
+Low:2 
+Switch id: 140 Time: 2185002
+High: 
+Low:2 
+Switch id: 141 Time: 2185002
+High: 
+Low:2 
+Switch id: 129 Time: 2185003
+High: 
+Low:
+Switch id: 128 Time: 2186001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2186002
+High: 
+Low:2 
+Switch id: 142 Time: 2186002
+High: 2 
+Low:
+Switch id: 137 Time: 2186002
+High: 2 
+Low:
+Switch id: 139 Time: 2186002
+High: 2 
+Low:
+Switch id: 138 Time: 2186002
+High: 2 
+Low:
+Switch id: 136 Time: 2186002
+High: 
+Low:2 
+Switch id: 140 Time: 2186002
+High: 
+Low:2 
+Switch id: 141 Time: 2186002
+High: 
+Low:2 
+Switch id: 129 Time: 2186003
+High: 
+Low:
+Switch id: 128 Time: 2187001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2187002
+High: 
+Low:2 
+Switch id: 142 Time: 2187002
+High: 2 
+Low:
+Switch id: 137 Time: 2187002
+High: 2 
+Low:
+Switch id: 139 Time: 2187002
+High: 2 
+Low:
+Switch id: 138 Time: 2187002
+High: 2 
+Low:
+Switch id: 136 Time: 2187002
+High: 
+Low:2 
+Switch id: 140 Time: 2187002
+High: 
+Low:2 
+Switch id: 141 Time: 2187002
+High: 
+Low:2 
+Switch id: 129 Time: 2187003
+High: 
+Low:
+Switch id: 128 Time: 2188001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2188002
+High: 
+Low:2 
+Switch id: 142 Time: 2188002
+High: 2 
+Low:
+Switch id: 137 Time: 2188002
+High: 2 
+Low:
+Switch id: 139 Time: 2188002
+High: 2 
+Low:
+Switch id: 138 Time: 2188002
+High: 2 
+Low:
+Switch id: 136 Time: 2188002
+High: 
+Low:2 
+Switch id: 140 Time: 2188002
+High: 
+Low:2 
+Switch id: 141 Time: 2188002
+High: 
+Low:2 
+Switch id: 129 Time: 2188003
+High: 
+Low:
+Switch id: 128 Time: 2189001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2189002
+High: 
+Low:2 
+Switch id: 142 Time: 2189002
+High: 2 
+Low:
+Switch id: 137 Time: 2189002
+High: 2 
+Low:
+Switch id: 139 Time: 2189002
+High: 2 
+Low:
+Switch id: 138 Time: 2189002
+High: 2 
+Low:
+Switch id: 136 Time: 2189002
+High: 
+Low:2 
+Switch id: 140 Time: 2189002
+High: 
+Low:2 
+Switch id: 141 Time: 2189002
+High: 
+Low:2 
+Switch id: 129 Time: 2189003
+High: 
+Low:
+Switch id: 128 Time: 2190001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2190002
+High: 
+Low:2 
+Switch id: 142 Time: 2190002
+High: 2 
+Low:
+Switch id: 137 Time: 2190002
+High: 2 
+Low:
+Switch id: 139 Time: 2190002
+High: 2 
+Low:
+Switch id: 138 Time: 2190002
+High: 2 
+Low:
+Switch id: 136 Time: 2190002
+High: 
+Low:2 
+Switch id: 140 Time: 2190002
+High: 
+Low:2 
+Switch id: 141 Time: 2190002
+High: 
+Low:2 
+Switch id: 129 Time: 2190003
+High: 
+Low:
+Switch id: 128 Time: 2191001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2191002
+High: 
+Low:2 
+Switch id: 142 Time: 2191002
+High: 2 
+Low:
+Switch id: 137 Time: 2191002
+High: 2 
+Low:
+Switch id: 139 Time: 2191002
+High: 2 
+Low:
+Switch id: 138 Time: 2191002
+High: 2 
+Low:
+Switch id: 136 Time: 2191002
+High: 
+Low:2 
+Switch id: 140 Time: 2191002
+High: 
+Low:2 
+Switch id: 141 Time: 2191002
+High: 
+Low:2 
+Switch id: 129 Time: 2191003
+High: 
+Low:
+Switch id: 128 Time: 2192001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2192002
+High: 
+Low:2 
+Switch id: 142 Time: 2192002
+High: 2 
+Low:
+Switch id: 137 Time: 2192002
+High: 2 
+Low:
+Switch id: 139 Time: 2192002
+High: 2 
+Low:
+Switch id: 138 Time: 2192002
+High: 2 
+Low:
+Switch id: 136 Time: 2192002
+High: 
+Low:2 
+Switch id: 140 Time: 2192002
+High: 
+Low:2 
+Switch id: 141 Time: 2192002
+High: 
+Low:2 
+Switch id: 129 Time: 2192003
+High: 
+Low:
+Switch id: 128 Time: 2193001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2193002
+High: 
+Low:2 
+Switch id: 142 Time: 2193002
+High: 2 
+Low:
+Switch id: 137 Time: 2193002
+High: 2 
+Low:
+Switch id: 139 Time: 2193002
+High: 2 
+Low:
+Switch id: 138 Time: 2193002
+High: 2 
+Low:
+Switch id: 136 Time: 2193002
+High: 
+Low:2 
+Switch id: 140 Time: 2193002
+High: 
+Low:2 
+Switch id: 141 Time: 2193002
+High: 
+Low:2 
+Switch id: 129 Time: 2193003
+High: 
+Low:
+Switch id: 128 Time: 2194001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2194002
+High: 
+Low:2 
+Switch id: 142 Time: 2194002
+High: 2 
+Low:
+Switch id: 137 Time: 2194002
+High: 2 
+Low:
+Switch id: 139 Time: 2194002
+High: 2 
+Low:
+Switch id: 138 Time: 2194002
+High: 2 
+Low:
+Switch id: 136 Time: 2194002
+High: 
+Low:2 
+Switch id: 140 Time: 2194002
+High: 
+Low:2 
+Switch id: 141 Time: 2194002
+High: 
+Low:2 
+Switch id: 129 Time: 2194003
+High: 
+Low:
+Switch id: 128 Time: 2195001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2195002
+High: 
+Low:2 
+Switch id: 142 Time: 2195002
+High: 2 
+Low:
+Switch id: 137 Time: 2195002
+High: 2 
+Low:
+Switch id: 139 Time: 2195002
+High: 2 
+Low:
+Switch id: 138 Time: 2195002
+High: 2 
+Low:
+Switch id: 136 Time: 2195002
+High: 
+Low:2 
+Switch id: 140 Time: 2195002
+High: 
+Low:2 
+Switch id: 141 Time: 2195002
+High: 
+Low:2 
+Switch id: 129 Time: 2195003
+High: 
+Low:
+Switch id: 128 Time: 2196001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2196002
+High: 
+Low:2 
+Switch id: 142 Time: 2196002
+High: 2 
+Low:
+Switch id: 137 Time: 2196002
+High: 2 
+Low:
+Switch id: 139 Time: 2196002
+High: 2 
+Low:
+Switch id: 138 Time: 2196002
+High: 2 
+Low:
+Switch id: 136 Time: 2196002
+High: 
+Low:2 
+Switch id: 140 Time: 2196002
+High: 
+Low:2 
+Switch id: 141 Time: 2196002
+High: 
+Low:2 
+Switch id: 129 Time: 2196003
+High: 
+Low:
+Switch id: 128 Time: 2197001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2197002
+High: 
+Low:2 
+Switch id: 142 Time: 2197002
+High: 2 
+Low:
+Switch id: 137 Time: 2197002
+High: 2 
+Low:
+Switch id: 139 Time: 2197002
+High: 2 
+Low:
+Switch id: 138 Time: 2197002
+High: 2 
+Low:
+Switch id: 136 Time: 2197002
+High: 
+Low:2 
+Switch id: 140 Time: 2197002
+High: 
+Low:2 
+Switch id: 141 Time: 2197002
+High: 
+Low:2 
+Switch id: 129 Time: 2197003
+High: 
+Low:
+Switch id: 128 Time: 2198001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2198002
+High: 
+Low:2 
+Switch id: 142 Time: 2198002
+High: 2 
+Low:
+Switch id: 137 Time: 2198002
+High: 2 
+Low:
+Switch id: 139 Time: 2198002
+High: 2 
+Low:
+Switch id: 138 Time: 2198002
+High: 2 
+Low:
+Switch id: 136 Time: 2198002
+High: 
+Low:2 
+Switch id: 140 Time: 2198002
+High: 
+Low:2 
+Switch id: 141 Time: 2198002
+High: 
+Low:2 
+Switch id: 129 Time: 2198003
+High: 
+Low:
+Switch id: 128 Time: 2199001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2199002
+High: 
+Low:2 
+Switch id: 142 Time: 2199002
+High: 2 
+Low:
+Switch id: 137 Time: 2199002
+High: 2 
+Low:
+Switch id: 139 Time: 2199002
+High: 2 
+Low:
+Switch id: 138 Time: 2199002
+High: 2 
+Low:
+Switch id: 136 Time: 2199002
+High: 
+Low:2 
+Switch id: 140 Time: 2199002
+High: 
+Low:2 
+Switch id: 141 Time: 2199002
+High: 
+Low:2 
+Switch id: 129 Time: 2199003
+High: 
+Low:
+Switch id: 128 Time: 2200001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2200002
+High: 
+Low:2 
+Switch id: 142 Time: 2200002
+High: 2 
+Low:
+Switch id: 137 Time: 2200002
+High: 2 
+Low:
+Switch id: 139 Time: 2200002
+High: 2 
+Low:
+Switch id: 138 Time: 2200002
+High: 2 
+Low:
+Switch id: 136 Time: 2200002
+High: 
+Low:2 
+Switch id: 140 Time: 2200002
+High: 
+Low:2 
+Switch id: 141 Time: 2200002
+High: 
+Low:2 
+Switch id: 129 Time: 2200003
+High: 
+Low:
+Switch id: 128 Time: 2201001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2201002
+High: 
+Low:2 
+Switch id: 142 Time: 2201002
+High: 2 
+Low:
+Switch id: 137 Time: 2201002
+High: 2 
+Low:
+Switch id: 139 Time: 2201002
+High: 2 
+Low:
+Switch id: 138 Time: 2201002
+High: 2 
+Low:
+Switch id: 136 Time: 2201002
+High: 
+Low:2 
+Switch id: 140 Time: 2201002
+High: 
+Low:2 
+Switch id: 141 Time: 2201002
+High: 
+Low:2 
+Switch id: 129 Time: 2201003
+High: 
+Low:
+Switch id: 128 Time: 2202001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2202002
+High: 
+Low:2 
+Switch id: 142 Time: 2202002
+High: 2 
+Low:
+Switch id: 137 Time: 2202002
+High: 2 
+Low:
+Switch id: 139 Time: 2202002
+High: 2 
+Low:
+Switch id: 138 Time: 2202002
+High: 2 
+Low:
+Switch id: 136 Time: 2202002
+High: 
+Low:2 
+Switch id: 140 Time: 2202002
+High: 
+Low:2 
+Switch id: 141 Time: 2202002
+High: 
+Low:2 
+Switch id: 129 Time: 2202003
+High: 
+Low:
+Switch id: 128 Time: 2203001
+High: 18 19 20 23 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792664325693112423, Value: 23
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2203002
+High: 
+Low:2 
+Switch id: 142 Time: 2203002
+High: 2 
+Low:
+Switch id: 137 Time: 2203002
+High: 2 
+Low:
+Switch id: 139 Time: 2203002
+High: 2 
+Low:
+Switch id: 138 Time: 2203002
+High: 2 
+Low:
+Switch id: 136 Time: 2203002
+High: 
+Low:2 
+Switch id: 140 Time: 2203002
+High: 
+Low:2 
+Switch id: 141 Time: 2203002
+High: 
+Low:2 
+Switch id: 129 Time: 2203003
+High: 
+Low:
+Switch id: 128 Time: 2204001
+High: 18 19 20 
+Low:17 21 22 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Key: 792665425204740199, Value: 19
+Switch id: 143 Time: 2204002
+High: 
+Low:2 
+Switch id: 142 Time: 2204002
+High: 
+Low:
+Switch id: 137 Time: 2204002
+High: 2 
+Low:
+Switch id: 139 Time: 2204002
+High: 2 
+Low:
+Switch id: 138 Time: 2204002
+High: 2 
+Low:
+Switch id: 136 Time: 2204002
+High: 
+Low:2 
+Switch id: 140 Time: 2204002
+High: 
+Low:2 
+Switch id: 141 Time: 2204002
+High: 
+Low:2 
+Switch id: 129 Time: 2204003
+High: 
+Low:
+Switch id: 128 Time: 2205001
+High: 18 20 
+Low:17 21 22 23 24 530 531 532 535 536 
+Key: 792659927646601319, Value: 18
+Key: 792662126669856871, Value: 20
+Switch id: 143 Time: 2205002
+High: 
+Low:2 
+Switch id: 142 Time: 2205002
+High: 
+Low:2 
+Switch id: 137 Time: 2205002
+High: 2 
+Low:
+Switch id: 139 Time: 2205002
+High: 2 
+Low:
+Switch id: 138 Time: 2205002
+High: 
+Low:
+Switch id: 136 Time: 2205002
+High: 
+Low:2 
+Switch id: 140 Time: 2205002
+High: 
+Low:2 
+Switch id: 141 Time: 2205002
+High: 
+Low:2 
+Switch id: 129 Time: 2205003
+High: 
+Low:
+Switch id: 128 Time: 2206001
+High: 20 
+Low:17 18 19 21 22 23 24 530 531 532 535 536 
+Key: 792662126669856871, Value: 20
+Switch id: 143 Time: 2206002
+High: 
+Low:2 
+Switch id: 142 Time: 2206002
+High: 
+Low:2 
+Switch id: 137 Time: 2206002
+High: 
+Low:2 
+Switch id: 139 Time: 2206002
+High: 2 
+Low:
+Switch id: 138 Time: 2206002
+High: 
+Low:2 
+Switch id: 136 Time: 2206002
+High: 
+Low:2 
+Switch id: 140 Time: 2206002
+High: 
+Low:2 
+Switch id: 141 Time: 2206002
+High: 
+Low:2 
+Switch id: 129 Time: 2206003
+High: 
+Low:
+
+*** Simulator is enforced to be finished, finished so far: 7/ total: 7, Time:+2206300000.0ns
+
+------------Reunion History---------------
+359.898
